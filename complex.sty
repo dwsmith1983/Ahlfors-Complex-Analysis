@@ -1,0 +1,64 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{complex}
+\usepackage{fixltx2e}%  http://ctan.org/pkg/fixltx2e
+
+\usepackage[utf8]{inputenx}%  http://ctan.org/pkg/inputenx
+% Euler for math | Palatino for rm | Helvetica for ss | Courier for tt
+\renewcommand{\rmdefault}{ppl}% rm
+\linespread{1.05}% Palatino needs more leading
+\usepackage[scaled]{helvet}% ss //  http://ctan.org/pkg/helvet
+\usepackage{courier}% tt // http://ctan.org/pkg/courier
+\usepackage{eulervm}  %  http://ctan.org/pkg/eulervm
+% a better implementation of the euler package (not in gwTeX)
+\normalfont%
+\usepackage[T1]{fontenc}%  http://ctan.org/pkg/fontenc
+\usepackage{textcomp}%  http://ctan.org/pkg/textcomp
+%
+\usepackage{mathtools}%  http://ctan.org/pkg/mathtools
+\usepackage{xcolor}%  http://ctan.org/pkg/xcolor
+\usepackage{amssymb}%  http://ctan.org/pkg/amssymb
+%\usepackage{float}%  http://ctan.org/pkg/float
+%\usepackage{standalone}%
+\usepackage{enumitem}%  http://ctan.org/pkg/enumitem
+%\usepackage{graphicx}%  http://ctan.org/pkg/graphicx
+%\usepackage{listings}%  http://ctan.org/pkg/listings
+\usepackage[stretch = 10, verbose = silent, protrusion = 0]{microtype}%
+%  http://ctan.org/pkg/microtype
+\usepackage{subcaption}%  http://ctan.org/pkg/subcaption
+\captionsetup[subfigure]{labelformat = parens, labelsep = space, font = small}
+%%  
+\usepackage[pdfencoding = auto, psdextra, bookmarksdepth = 4]{hyperref}%
+% http://ctan.org/pkg/hypperref
+\usepackage[margin = 0.5in]{geometry}%  http://ctan.org/pkg/geometry
+\usepackage[noabbrev]{cleveref}%  http://ctan.org/pkg/cleveref
+%  adding examples to cleverref
+\usepackage[all]{hypcap}%  http://ctan.org/pkg/hypcap
+%
+%
+%  suppressing badness warnings that aren't to severe
+\vbadness = 2000
+\hbadness = 2000
+%
+%  hyperref settings
+\newcommand\myshade{100}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{YellowOrange}
+\colorlet{myurlcolor}{Aquamarine}
+
+\hypersetup{
+  linkcolor  = mylinkcolor!\myshade!black,
+  citecolor  = mycitecolor!\myshade!black,
+  urlcolor   = myurlcolor!\myshade!black,
+  colorlinks = true,
+}
+%%%%% 
+
+% Allows equation taggin in any math enviroment
+
+\newcommand{\eqnumtag}{%
+  % step the counter and make it lable-able
+  \refstepcounter{equation}%
+  % print the counter as tag
+  \tag{\theequation}%
+}
+%

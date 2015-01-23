@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Complex Numbers}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Arithmetic Operations}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Square Roots}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Justification}{5}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Conjugation, Absolute Value}{5}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Inequalities}{7}{subsection.1.5}

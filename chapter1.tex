@@ -215,6 +215,123 @@
 \end{enumerate}
 
 \subsection{Conjugation, Absolute Value}
+\begin{enumerate}
+\item
+  Verify by calculation the values of
+  \[
+  \frac{z}{z^2 + 1}
+  \]
+  for \(z = x + iy\) and \(\bar{z} = x - iy\) are conjugate.
+  \par\smallskip
+  For \(z\), we have that \(z^2 = x^2 - y^2 + 2xyi\).
+  \begin{align*}
+    \frac{z}{z^2 + 1}
+    & = \frac{x + iy}{x^2 - y^2 + 1 + 2xyi}\\
+    & = \frac{x + iy}{x^2 - y^2 + 1 + 2xyi}
+      \frac{x^2 - y^2 + 1 - 2xyi}{x^2 - y^2 + 1 - 2xyi}\\
+    & = \frac{x(x^2 - y^2 + 1) + 2xy^2 + iy(x^2 - y^2 + 1 - 2x^2)}
+      {(x^2 - y^2 + 1)^2 + 4x^2y^2}\eqnumtag\label{1.4.1z}
+  \end{align*}
+  For \(\bar{z}\), we have that \(\bar{z}^2 = x^2 - y^2 - 2xyi\).
+  \begin{align*}
+    \frac{\bar{z}}{\bar{z}^2 + 1}
+    & = \frac{x - iy}{x^2 - y^2 + 1 - 2xyi}\\
+    & = \frac{x - iy}{x^2 - y^2 + 1 - 2xyi}
+      \frac{x^2 - y^2 + 1 + 2xyi}{x^2 - y^2 + 1 + 2xyi}\\
+    & = \frac{x(x^2 - y^2 + 1) + 2xy^2 - iy(x^2 - y^2 + 1 - 2x^2)}
+      {(x^2 - y^2 + 1)^2 + 4x^2y^2}\eqnumtag\label{1.4.1barz}
+  \end{align*}
+  Therefore, we have that \cref{1.4.1z,1.4.1barz} are conjugates.
+\item
+  Find the absolute value (modulus) of
+  \[
+  -2i(3 + i)(2 + 4i)(1 + i)\qquad\text{and}\qquad
+  \frac{(3 + 4i)(-1 + 2i)}{(-1 - i)(3 - i)}.
+  \]
+  When we expand the first problem, we have that
+  \[
+  z_1 = -2i(3 + i)(2 + 4i)(1 + i) = 32 + 24i
+  \]
+  so
+  \[
+  \lvert z_1\rvert = \sqrt{32^2 + 24^2} = 40.
+  \]
+  For the second problem, we have that
+  \[
+  z_2 = \frac{(3 + 4i)(-1 + 2i)}{(-1 - i)(3 - i)} = 2 - \frac{3}{2}i
+  \]
+  so
+  \[
+  \lvert z_2\rvert = \sqrt{4 + 9/4} = \frac{5}{2}.
+  \]
+\item
+  Prove that
+  \[
+  \Bigl\lvert\frac{a - b}{1 - \bar{a}b}\Bigr\rvert = 1
+  \]
+  if either \(\lvert a\rvert = 1\) or \(\lvert b\rvert = 1\).
+  What exception must be made if \(\lvert a\rvert = \lvert b\rvert = 1\)?
+  \par\smallskip
+  Recall that \(\lvert z\rvert^2 = z\bar{z}\).
+  \begin{align*}
+    1^2 & = \Bigl\lvert\frac{a - b}{1 - \bar{a}b}\Bigr\rvert^2\\
+    1 & = \Bigl(\frac{a - b}{1 - \bar{a}b}\Bigr)
+    \Bigl(\frac{\overline{a - b}}{\overline{1 - \bar{a}b}}\Bigr)\\
+        & = \Bigl(\frac{a - b}{1 - \bar{a}b}\Bigr)
+          \Bigl(\frac{\bar{a} - \bar{b}}{1 - a\bar{b}}\Bigr)\\
+        & = \frac{a\bar{a} - a\bar{b} - \bar{a}b + b\bar{b}}
+          {1 - \bar{a}b - a\bar{b} + a\bar{a}b\bar{b}}\eqnumtag\label{1.4.3}
+  \end{align*}
+  If \(\lvert a\rvert = 1\), then \(\lvert a\rvert^2 = a\bar{a} = 1\) and
+  similarly for \(\lvert b\rvert^2 = 1\).
+  Then \cref{1.4.3} becomes
+  \[
+  \frac{1 - a\bar{b} - \bar{a}b + b\bar{b}}{1 - \bar{a}b - a\bar{b} + b\bar{b}}
+  \qquad\text{and}\qquad
+  \frac{1 - a\bar{b} - \bar{a}b + a\bar{a}}{1 - \bar{a}b - a\bar{b} + a\bar{a}}
+  \]
+  resepctively which is one.
+  If \(\lvert a\rvert = \lvert b\rvert = 1\), then
+  \(\lvert a\rvert^2 = \vert b\rvert^2 = 1\) so \cref{1.4.3} can be written as
+  \[
+  \frac{2 - a\bar{b} - \bar{a}b}{2 - \bar{a}b - a\bar{b}}.
+  \]
+  Therefore, we must have that \(a\bar{b} + \bar{a}b\neq 2\).
+\item
+  Find the conditions under which the equation \(az + b\bar{z} + c = 0\) in one
+  complex unknown has exactly one solution, and compute that solution.
+  \par\smallskip
+  Let \(z = x + iy\).
+  Then \(az + b\bar{z} + c = a(x + iy) + b(x - iy) + c = 0\).
+  \begin{subequations}
+    \begin{align}
+      (a + b)x + c & = 0\label{1.4.4R}\\
+      (a - b)y & = 0\label{1.4.4I}
+    \end{align}
+  \end{subequations}
+  Lets consider \cref{1.4.4I}.
+  We either have that \(a = b\) or \(y = 0\).
+  If \(a = b\), then WLOG \cref{1.4.4R} can be written as
+  \[
+  x = \frac{-c}{2a}
+  \]
+  and \(y\in\mathbb{R}\).
+  For fixed \(a,b,c\), we have infinitely many solutions when \(a = b\) since
+  \(z = \frac{-c}{2a} + iy\) for \(y\in\mathbb{R}\).
+  If \(y = 0\), then \cref{1.4.4R} can be written as
+  \[
+  x = \frac{-c}{a + b}.
+  \]
+  Therefore, \(z = x\) and we have only one solution.
+\item
+  Prove that Lagrange's identity in the complex form
+  \[
+  \Bigl\lvert\sum_{i = 1}^na_ib_i\Bigr\rvert^2 =
+  \sum_{i = 1}^n\lvert a_i\rvert^2\sum_{i = 1}^n\lvert b_i\rvert^2 -
+  \smashoperator{\sum_{1\leq i\leq j\leq n}}
+  \lvert a_i\bar{b}_j - a_j\bar{b}_i\rvert^2.
+  \]
+\end{enumerate}
 
 \subsection{Inequalities}
 

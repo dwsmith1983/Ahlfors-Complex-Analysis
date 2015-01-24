@@ -1,4 +1,6 @@
-\section{Complex Numbers}
+\chapter{Complex Numbers}
+
+\section{The Algebra of Complex Numbers}
 
 \subsection{Arithmetic Operations}
 
@@ -116,6 +118,7 @@
 \end{enumerate}
 
 \subsection{Square Roots}
+
 \begin{enumerate}
 \item
   Compute
@@ -215,6 +218,7 @@
 \end{enumerate}
 
 \subsection{Conjugation, Absolute Value}
+
 \begin{enumerate}
 \item
   Verify by calculation the values of
@@ -334,6 +338,59 @@
 \end{enumerate}
 
 \subsection{Inequalities}
+
+\begin{enumerate}
+\item
+  Prove that
+  \[
+  \Bigl\lvert\frac{a - b}{1 - \bar{a}b}\Bigr\rvert < 1
+  \]
+  if \(\lvert a\rvert < 1\) and \(\lvert b\rvert < 1\).
+  \par\smallskip
+  From the properties of the modulus, we have that
+  \begin{align*}
+    \Bigl\lvert\frac{a - b}{1 - \bar{a}b}\Bigr\rvert
+    & = \frac{\lvert a - b\rvert}{\lvert 1 - \bar{a}b\rvert}\\
+    & = \frac{\lvert a - b\rvert^2}{\lvert 1 - \bar{a}b\rvert^2}\eqnumtag
+    \label{1.5.1ineq1}\\
+    & = \frac{(a - b)(\bar{a} - \bar{b})}{(1 - \bar{a}b)(1 - a\bar{b})}\\
+    & = \frac{\lvert a\rvert^2 + \lvert b\rvert^2 - a\bar{b} - \bar{a}b}
+      {1 + \lvert a\rvert^2\lvert b\rvert^2 - \bar{a}b - a\bar{b}}\\
+    & < \frac{2 - a\bar{b} - \bar{a}b}{2 - \bar{a}b - a\bar{b}}\\
+    & = 1\eqnumtag\label{1.5.1ineq2}
+  \end{align*}
+  From \cref{1.5.1ineq1,1.5.1ineq2}, we have
+  \begin{align*}
+    \frac{\lvert a - b\rvert^2}{\lvert 1 - \bar{a}b\rvert^2} & < 1\\
+    \frac{\lvert a - b\rvert}{\lvert 1 - \bar{a}b\rvert} & < 1
+  \end{align*}
+\item
+  Prove Cauchy's inequality by induction.
+\item
+  If \(\lvert a_i\rvert < 1\), \(\lambda_i\geq 1\) for \(i = 1,\ldots,n\) and
+  \(\lambda_1 + \lambda_2 + \cdots + \lambda_n = 1\), show that
+  \[
+  \lvert\lambda_1a_1 + \lambda_2a_2 + \cdots + \lambda_na_n\rvert < 1.
+  \]
+\item
+  Show that there are complex numbers \(z\) satisfying
+  \[
+  \lvert z - a\rvert + \lvert z + a\rvert = 2\lvert c\rvert
+  \]
+  if and only if \(\lvert a\rvert\leq\lvert c\rvert\).
+  If this condition is fulfilled, what are the smallest and largest values
+  \(\lvert z\rvert\)?
+\end{enumerate}
+
+\section{The Geometric Representation of Complex Numbers}
+
+\subsection{Geometric Addition and Multiplication}
+
+\subsection{The Binomial Equation}
+
+\subsection{Analytic Geometry}
+
+\subsection{The Spherical Representation}
 
 %%% Local Variables:
 %%% mode: latex

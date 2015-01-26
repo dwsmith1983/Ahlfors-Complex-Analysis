@@ -14,6 +14,8 @@
     "mathtools"
     "xcolor"
     "amssymb"
+    "float"
+    "standalone"
     "enumitem"
     "microtype"
     "subcaption"

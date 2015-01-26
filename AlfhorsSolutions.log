@@ -1,12 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  26 JAN 2015 00:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  26 JAN 2015 12:44
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**AlfhorsSolutions.tex
+**\input AlfhorsSolutions.tex
 (./AlfhorsSolutions.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2015/01/14 v3.15 KOMA-Script document class (book)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -642,22 +640,150 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks22
+\float@box=\box29
+\@float@everytoks=\toks23
+\@floatcapt=\box30
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/standalone/standalone.sty
+Package: standalone 2012/09/15 v1.1b Package to include TeX sub-files with prea
+mbles
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count107
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/currfile/currfile.sty
+Package: currfile 2013/02/01 v0.7b Provides the file path elements of the curre
+nt input file
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2011/10/12 v0.5d Hooks for input files
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/filehook/filehook-scrlfile.sty
+Package: filehook-scrlfile 2011/01/03 v0.1 filehook patch for scrlfile package
+Package filehook Info: Package 'scrlfile' detected and compensated for on input
+ line 102.
+))
+\c@currfiledepth=\count108
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/gincltex/gincltex.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/svn-prov/svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box31
+)
+\tc@llx=\dimen123
+\tc@lly=\dimen124
+\tc@urx=\dimen125
+\tc@ury=\dimen126
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen127
+\adjbox@Height=\dimen128
+\adjbox@Depth=\dimen129
+\adjbox@Totalheight=\dimen130
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count109
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box32
+\sift@deathcycles=\count110
+\@vwid@loff=\dimen131
+\@vwid@roff=\dimen132
+))
+\gincltex@box=\box33
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/filemod/filemod-expmin.sty
+Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
+ (expandable; minimal)
+))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip55
-\enit@outerparindent=\dimen121
-\enit@toks=\toks22
-\enit@inbox=\box29
-\enitdp@description=\count106
+\enit@outerparindent=\dimen133
+\enit@toks=\toks26
+\enit@inbox=\box34
+\enitdp@description=\count111
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks23
-\MT@count=\count107
+\MT@toks=\toks27
+\MT@count=\count112
 LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen122
+\MT@outer@kern=\dimen134
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count108
+\MT@listname@count=\count113
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
@@ -683,19 +809,20 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen123
-\captionmargin@=\dimen124
-\captionwidth=\dimen125
-\caption@tempdima=\dimen126
-\caption@indent=\dimen127
-\caption@parindent=\dimen128
-\caption@hangindent=\dimen129
+\captionmargin=\dimen135
+\captionmargin@=\dimen136
+\captionwidth=\dimen137
+\caption@tempdima=\dimen138
+\caption@indent=\dimen139
+\caption@parindent=\dimen140
+\caption@hangindent=\dimen141
 )
 Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count109
+\c@ContinuedFloat=\count114
+Package caption Info: float package is loaded.
 )
-\c@subfigure=\count110
-\c@subtable=\count111
+\c@subfigure=\count115
+\c@subtable=\count116
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -709,19 +836,13 @@ Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -745,25 +866,19 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-)
-\@linkdim=\dimen130
-\Hy@linkcounter=\count112
-\Hy@pagecounter=\count113
+\@linkdim=\dimen142
+\Hy@linkcounter=\count117
+\Hy@pagecounter=\count118
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count114
+\Hy@SavedSpaceFactor=\count119
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -791,17 +906,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count115
+\c@Hy@tempcnt=\count120
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen131
-\Fld@menulength=\count116
-\Field@Width=\dimen132
-\Fld@charsize=\dimen133
+\XeTeXLinkMargin=\dimen143
+\Fld@menulength=\count121
+\Field@Width=\dimen144
+\Fld@charsize=\dimen145
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -811,17 +926,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count117
-\c@Item=\count118
-\c@Hfootnote=\count119
+\Hy@abspage=\count122
+\c@Item=\count123
+\c@Hfootnote=\count124
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count120
-\c@bookmark@seq@number=\count121
+\Fld@listcount=\count125
+\c@bookmark@seq@number=\count126
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -832,18 +947,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count122
-\Gm@cntv=\count123
-\c@Gm@tempcnt=\count124
-\Gm@bindingoffset=\dimen134
-\Gm@wd@mp=\dimen135
-\Gm@odd@mp=\dimen136
-\Gm@even@mp=\dimen137
-\Gm@layoutwidth=\dimen138
-\Gm@layoutheight=\dimen139
-\Gm@layouthoffset=\dimen140
-\Gm@layoutvoffset=\dimen141
-\Gm@dimlist=\toks24
+\Gm@cnth=\count127
+\Gm@cntv=\count128
+\c@Gm@tempcnt=\count129
+\Gm@bindingoffset=\dimen146
+\Gm@wd@mp=\dimen147
+\Gm@odd@mp=\dimen148
+\Gm@even@mp=\dimen149
+\Gm@layoutwidth=\dimen150
+\Gm@layoutheight=\dimen151
+\Gm@layouthoffset=\dimen152
+\Gm@layoutvoffset=\dimen153
+\Gm@dimlist=\toks28
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
@@ -892,21 +1007,20 @@ LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: pdftex.def on input line 91.
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count130
+\scratchdimen=\dimen154
+\scratchbox=\box35
+\nofMPsegments=\count131
+\nofMParguments=\count132
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count133
+\MPscratchDim=\dimen155
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
+\everyMPtoPDFconversion=\toks30
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -921,23 +1035,6 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\Gin@req@height=\dimen142
-\Gin@req@width=\dimen143
-)
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen144
-\scratchbox=\box30
-\nofMPsegments=\count126
-\nofMParguments=\count127
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen145
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks26
-)
 LaTeX Info: Redefining \microtypecontext on input line 9.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -948,14 +1045,15 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: hypcap package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box31
+\AtBeginShipoutBox=\box36
 Package hyperref Info: Link coloring ON on input line 9.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -964,7 +1062,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count131
+\c@section@level=\count136
 )
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
@@ -1077,6 +1175,21 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 Chapter 1.
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface .
+
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -1085,9 +1198,22 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 11.39996pt on input line 5.
-[5] [6] [7] [8] [9] [10] [11])
+[5] [6] [7] [8] [9] [10] [11]
+<Tikz/1-2prob3a.pdf, id=180, 57.80095pt x 57.29706pt>
+File: Tikz/1-2prob3a.pdf Graphic file (type pdf)
+ <use Tikz/1-2prob3a.pdf>
+Package pdftex.def Info: Tikz/1-2prob3a.pdf used on input line 556.
+(pdftex.def)             Requested size: 144.54pt x 143.28947pt.
+
+[12 <./Tikz/1-2prob3a.pdf>]
+<Tikz/1-2prob3b.pdf, id=190, 58.32791pt x 57.29706pt>
+File: Tikz/1-2prob3b.pdf Graphic file (type pdf)
+ <use Tikz/1-2prob3b.pdf>
+Package pdftex.def Info: Tikz/1-2prob3b.pdf used on input line 585.
+(pdftex.def)             Requested size: 144.54pt x 142.02176pt.
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
- [12]
+[13 <./Tikz/1-2prob3b.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (./AlfhorsSolutions.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
@@ -1097,13 +1223,13 @@ Package rerunfilecheck Info: File `AlfhorsSolutions.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
  ) 
 Here is how much of TeX's memory you used:
- 18841 strings out of 493109
- 290887 string characters out of 6135010
- 468733 words of memory out of 5000000
- 21952 multiletter control sequences out of 15000+600000
- 38695 words of font info for 94 fonts, out of 8000000 for 9000
+ 20179 strings out of 493109
+ 314712 string characters out of 6135010
+ 504165 words of memory out of 5000000
+ 23202 multiletter control sequences out of 15000+600000
+ 40625 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,58p,354b,2073s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,13n,118p,390b,2075s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -1119,10 +1245,10 @@ sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></u
 sr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on AlfhorsSolutions.pdf (12 pages, 128909 bytes).
+Output written on AlfhorsSolutions.pdf (13 pages, 137180 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 222 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 14945 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 15467 words of extra memory for PDF output out of 17280 (max. 10000000)
 

@@ -533,6 +533,58 @@
   \end{align*}
 \item
   Express the fifth and tenth roots of unity in algebraic form.
+  \par\smallskip
+  To find the roots of unity, we are looking to solve \(z^n = 1\).
+  Let \(z = e^{i\theta}\) and \(1 = e^{2ik\pi}\).
+  Then \(\theta = \frac{2k\pi}{n}\).
+  For the fifth roots of unity, \(n = 5\) and \(k = 0,1,\ldots, 4\) so we have
+  \begin{alignat*}{2}
+    \omega_0 & = e^0 &&{}= \cos(0) + i\sin(0)\\
+    & &&{}= 1\\
+    \omega_1 & = e^{2\pi/5} &&{}=
+    \cos\Bigl(\frac{2\pi}{5}\Bigr) + i\sin\Bigl(\frac{2\pi}{5}\Bigr)\\
+    \omega_2 & = e^{4\pi/5} &&{}=
+    \cos\Bigl(\frac{4\pi}{5}\Bigr) + i\sin\Bigl(\frac{4\pi}{5}\Bigr)\\
+    \omega_3 & = e^{6\pi/5} &&{}=
+    \cos\Bigl(\frac{6\pi}{5}\Bigr) + i\sin\Bigl(\frac{6\pi}{5}\Bigr)\\
+    \omega_4 & = e^{8\pi/5} &&{}=
+    \cos\Bigl(\frac{8\pi}{5}\Bigr) + i\sin\Bigl(\frac{8\pi}{5}\Bigr)\\
+  \end{alignat*}
+  Now we can plot the roots of unity on the unit circle.
+  \begin{figure}[H]
+    \centering
+    \includestandalone[mode = image, width = 2in]{Tikz/1-2prob3a}
+    \caption{The fifth roots of unity.}
+  \end{figure}
+  For the tenth roots of unity, \(n = 10\) and \(k = 0,1,\ldots, 9\) so we have
+  \begin{alignat*}{2}
+    \omega_0 & = e^0 &&{}= \cos(0) + i\sin(0)\\
+    & &&{}= 1\\
+    \omega_1 & = e^{2\pi/10} &&{}=
+    \cos\Bigl(\frac{\pi}{5}\Bigr) + i\sin\Bigl(\frac{\pi}{5}\Bigr)\\
+    \omega_2 & = e^{4\pi/10} &&{}=
+    \cos\Bigl(\frac{2\pi}{5}\Bigr) + i\sin\Bigl(\frac{2\pi}{5}\Bigr)\\
+    \omega_3 & = e^{6\pi/10} &&{}=
+    \cos\Bigl(\frac{3\pi}{5}\Bigr) + i\sin\Bigl(\frac{3\pi}{5}\Bigr)\\
+    \omega_4 & = e^{8\pi/10} &&{}=
+    \cos\Bigl(\frac{4\pi}{5}\Bigr) + i\sin\Bigl(\frac{4\pi}{5}\Bigr)\\
+    \omega_5 & = e^{10\pi/10} &&{}= \cos(\pi) + i\sin(\pi)\\
+    & &&{}= -1\\
+    \omega_6 & = e^{12\pi/10} &&{}=
+    \cos\Bigl(\frac{6\pi}{5}\Bigr) + i\sin\Bigl(\frac{6\pi}{5}\Bigr)\\
+    \omega_7 & = e^{14\pi/10} &&{}=
+    \cos\Bigl(\frac{7\pi}{5}\Bigr) + i\sin\Bigl(\frac{7\pi}{5}\Bigr)\\
+    \omega_8 & = e^{16\pi/10} &&{}=
+    \cos\Bigl(\frac{8\pi}{5}\Bigr) + i\sin\Bigl(\frac{8\pi}{5}\Bigr)\\
+    \omega_9 & = e^{18\pi/10} &&{}=
+    \cos\Bigl(\frac{9\pi}{5}\Bigr) + i\sin\Bigl(\frac{9\pi}{5}\Bigr)
+  \end{alignat*}
+  Now we can plot the roots of unity on the unit circle.
+  \begin{figure}[H]
+    \centering
+    \includestandalone[mode = image, width = 2in]{Tikz/1-2prob3b}
+    \caption{The tenth roots of unity.}
+  \end{figure}
 \item
   If \(\omega\) is given by \(\omega = \cos\bigl(\frac{2\pi}{n}\bigr) +
   i\sin\bigl(\frac{2\pi}{n}\bigr)\), prove that
@@ -540,10 +592,35 @@
   1 + \omega^h + \omega^{2h} + \cdots + \omega^{(n - 1)h} = 0
   \]
   for any integer \(h\) which is not a multiple of \(n\).
+  \par\smallskip
+  Let \(\omega = \cos\bigl(\frac{2\pi}{n}\bigr) +
+  i\sin\bigl(\frac{2\pi}{n}\bigr)\) be written in exonential form as
+  \(\omega = e^{2\pi i/n}\).
+  Then the series can be written as
+  \[
+  \sum_{k = 0}^{n - 1}\bigl(e^{2\pi ih/n}\bigr)^k =
+  \frac{e^{2ih\pi} - 1}{e^{2hi\pi/n} - 1}.
+  \]
+  Since \(h\) is an integer, \(e^{2ih\pi} = 1\); therefore, the series zero.
 \item
   What is the value of
   \[
   1 - \omega^h + \omega^{2h} - \cdots + (-1)^{n - 1}\omega^{(n - 1)h}\mbox{?}
+  \]
+  We can represent this series similarly as
+  \[
+  \sum_{k = 0}^{n - 1}\bigl(-e^{2\pi ih/n}\bigr)^k =
+  \frac{(-1)^ne^{2ih\pi} - 1}{-e^{2hi\pi/n} - 1} =
+  \frac{1 + (-1)^{n + 1}e^{2ih\pi}}{1 + e^{2hi\pi/n}}.
+  \]
+  Again, since \(h\) is an intger, we have that \(e^{2ih\pi} = 1\) which leaves
+  us with
+  \[
+  \frac{1 + (-1)^{n + 1}}{1 + e^{2hi\pi/n}} =
+  \begin{cases}
+    0, & \text{if \(n\) is even}\\
+    \frac{2}{1 + e^{2hi\pi/n}}, & \text{if \(n\) is odd}
+  \end{cases}
   \]
 \end{enumerate}
 

@@ -8,5 +8,5 @@
 \contentsline {section}{\numberline {1.2}The Geometric Representation of Complex Numbers}{11}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Geometric Addition and Multiplication}{11}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}The Binomial Equation}{11}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Analytic Geometry}{13}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}The Spherical Representation}{13}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.3}Analytic Geometry}{14}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}The Spherical Representation}{14}{subsection.1.2.4}

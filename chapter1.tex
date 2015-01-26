@@ -130,13 +130,13 @@
   \begin{align}
     \sqrt{i} & = x + iy\notag\\
     i & = x^2 - y^2 + 2xyi\notag\\
-    x^2 - y^2 & = 0\label{ch1sec2prob1a}\\
-    2xy & = 1\label{ch1sec2prob1a2}
+    x^2 - y^2 & = 0\label{1.1.2.1a}\\
+    2xy & = 1\label{1.1.2.1b}
   \end{align}
-  From \cref{ch1sec2prob1a}, we see that \(x^2 = y^2\) or \(\pm x = \pm y\).
+  From \cref{1.1.2.1a}, we see that \(x^2 = y^2\) or \(\pm x = \pm y\).
   Also, note that \(i\) is the upper half plane (UHP).
   That is, the angle is positive so \(x = y\) and \(2x^2 = 1\) from
-  \cref{ch1sec2prob1a2}.
+  \cref{1.1.2.1a}.
   Therefore, \(\sqrt{i} = \frac{1}{\sqrt{2}}(1 + i)\).
   We also could have done this problem using the polar form of \(z\).
   Let \(z = i\).
@@ -234,7 +234,7 @@
     & = \frac{x + iy}{x^2 - y^2 + 1 + 2xyi}
       \frac{x^2 - y^2 + 1 - 2xyi}{x^2 - y^2 + 1 - 2xyi}\\
     & = \frac{x(x^2 - y^2 + 1) + 2xy^2 + iy(x^2 - y^2 + 1 - 2x^2)}
-      {(x^2 - y^2 + 1)^2 + 4x^2y^2}\eqnumtag\label{1.4.1z}
+      {(x^2 - y^2 + 1)^2 + 4x^2y^2}\eqnumtag\label{1.1.4.1z}
   \end{align*}
   For \(\bar{z}\), we have that \(\bar{z}^2 = x^2 - y^2 - 2xyi\).
   \begin{align*}
@@ -243,9 +243,9 @@
     & = \frac{x - iy}{x^2 - y^2 + 1 - 2xyi}
       \frac{x^2 - y^2 + 1 + 2xyi}{x^2 - y^2 + 1 + 2xyi}\\
     & = \frac{x(x^2 - y^2 + 1) + 2xy^2 - iy(x^2 - y^2 + 1 - 2x^2)}
-      {(x^2 - y^2 + 1)^2 + 4x^2y^2}\eqnumtag\label{1.4.1barz}
+      {(x^2 - y^2 + 1)^2 + 4x^2y^2}\eqnumtag\label{1.1.4.1barz}
   \end{align*}
-  Therefore, we have that \cref{1.4.1z,1.4.1barz} are conjugates.
+  Therefore, we have that \cref{1.1.4.1z,1.1.4.1barz} are conjugates.
 \item
   Find the absolute value (modulus) of
   \[
@@ -284,11 +284,11 @@
         & = \Bigl(\frac{a - b}{1 - \bar{a}b}\Bigr)
           \Bigl(\frac{\bar{a} - \bar{b}}{1 - a\bar{b}}\Bigr)\\
         & = \frac{a\bar{a} - a\bar{b} - \bar{a}b + b\bar{b}}
-          {1 - \bar{a}b - a\bar{b} + a\bar{a}b\bar{b}}\eqnumtag\label{1.4.3}
+          {1 - \bar{a}b - a\bar{b} + a\bar{a}b\bar{b}}\eqnumtag\label{1.1.4.3}
   \end{align*}
   If \(\lvert a\rvert = 1\), then \(\lvert a\rvert^2 = a\bar{a} = 1\) and
   similarly for \(\lvert b\rvert^2 = 1\).
-  Then \cref{1.4.3} becomes
+  Then \cref{1.1.4.3} becomes
   \[
   \frac{1 - a\bar{b} - \bar{a}b + b\bar{b}}{1 - \bar{a}b - a\bar{b} + b\bar{b}}
   \qquad\text{and}\qquad
@@ -296,7 +296,7 @@
   \]
   resepctively which is one.
   If \(\lvert a\rvert = \lvert b\rvert = 1\), then
-  \(\lvert a\rvert^2 = \vert b\rvert^2 = 1\) so \cref{1.4.3} can be written as
+  \(\lvert a\rvert^2 = \vert b\rvert^2 = 1\) so \cref{1.1.4.3} can be written as
   \[
   \frac{2 - a\bar{b} - \bar{a}b}{2 - \bar{a}b - a\bar{b}}.
   \]
@@ -309,20 +309,20 @@
   Then \(az + b\bar{z} + c = a(x + iy) + b(x - iy) + c = 0\).
   \begin{subequations}
     \begin{align}
-      (a + b)x + c & = 0\label{1.4.4R}\\
-      (a - b)y & = 0\label{1.4.4I}
+      (a + b)x + c & = 0\label{1.1.4.4R}\\
+      (a - b)y & = 0\label{1.1.4.4I}
     \end{align}
   \end{subequations}
-  Lets consider \cref{1.4.4I}.
+  Lets consider \cref{1.1.4.4I}.
   We either have that \(a = b\) or \(y = 0\).
-  If \(a = b\), then WLOG \cref{1.4.4R} can be written as
+  If \(a = b\), then WLOG \cref{1.1.4.4R} can be written as
   \[
   x = \frac{-c}{2a}
   \]
   and \(y\in\mathbb{R}\).
   For fixed \(a,b,c\), we have infinitely many solutions when \(a = b\) since
   \(z = \frac{-c}{2a} + iy\) for \(y\in\mathbb{R}\).
-  If \(y = 0\), then \cref{1.4.4R} can be written as
+  If \(y = 0\), then \cref{1.1.4.4R} can be written as
   \[
   x = \frac{-c}{a + b}.
   \]
@@ -352,26 +352,74 @@
     \Bigl\lvert\frac{a - b}{1 - \bar{a}b}\Bigr\rvert
     & = \frac{\lvert a - b\rvert}{\lvert 1 - \bar{a}b\rvert}\\
     & = \frac{\lvert a - b\rvert^2}{\lvert 1 - \bar{a}b\rvert^2}\eqnumtag
-    \label{1.5.1ineq1}\\
+    \label{1.1.5.1ineq1}\\
     & = \frac{(a - b)(\bar{a} - \bar{b})}{(1 - \bar{a}b)(1 - a\bar{b})}\\
     & = \frac{\lvert a\rvert^2 + \lvert b\rvert^2 - a\bar{b} - \bar{a}b}
       {1 + \lvert a\rvert^2\lvert b\rvert^2 - \bar{a}b - a\bar{b}}\\
     & < \frac{2 - a\bar{b} - \bar{a}b}{2 - \bar{a}b - a\bar{b}}\\
-    & = 1\eqnumtag\label{1.5.1ineq2}
+    & = 1\eqnumtag\label{1.1.5.1ineq2}
   \end{align*}
-  From \cref{1.5.1ineq1,1.5.1ineq2}, we have
+  From \cref{1.1.5.1ineq1,1.1.5.1ineq2}, we have
   \begin{align*}
     \frac{\lvert a - b\rvert^2}{\lvert 1 - \bar{a}b\rvert^2} & < 1\\
     \frac{\lvert a - b\rvert}{\lvert 1 - \bar{a}b\rvert} & < 1
   \end{align*}
 \item
   Prove Cauchy's inequality by induction.
+  \par\smallskip
+  Cauchy's inequality is
+  \begin{align*}
+    \lvert a_1b_1 + \cdots + a_nb_n\rvert^2
+    & \leq \bigl(\lvert a_1\rvert^2 + \cdots + \lvert a_n\rvert^2\bigr)
+      \bigl(\lvert b_1\rvert^2 + \cdots + \lvert b_n\rvert^2\bigr)\\
+    \intertext{which can be written more compactly as}
+    \Bigl\lvert\sum_{i = 1}^na_ib_i\Bigr\rvert^2
+    & \leq\sum_{i = 1}^n\lvert a_i\rvert^2\sum_{i = 1}^n\lvert b_i\rvert^2.
+  \end{align*}
+  For the base case, \(i = 1\), we have
+  \[
+  \lvert a_1b_1\rvert^2 = (a_1b_1)(\bar{a}_1\bar{b}_1) =
+  a_1\bar{a}_1b_1\bar{b}_1 = \lvert a_1\rvert^2\lvert b_1\rvert^2
+  \]
+  so the base case is true.
+  Now let the equality hold for all \(k - 1\in\mathbb{Z}\) where
+  \(k - 1\leq n\).
+  That is, we assume that
+  \[
+  \Bigl\lvert\sum_{i = 1}^{k - 1}a_ib_i\Bigr\rvert^2\leq
+  \sum_{i = 1}^{k - 1}\lvert a_i\rvert^2\sum_{i = 1}^{k - 1}\lvert b_i\rvert^2
+  \]
+  to be true.
+  \begin{align*}
+    \Bigl\lvert\sum_{i = 1}^{k - 1}a_ib_i\Bigr\rvert^2 + \lvert a_kb_k\rvert^2
+    & \leq \sum_{i = 1}^{k - 1}\lvert a_i\rvert^2
+      \sum_{i = 1}^{k - 1}\lvert b_i\rvert^2 + \lvert a_kb_k\rvert^2\\
+    \Bigl\lvert\sum_{i = 1}^ka_ib_i\Bigr\rvert^2
+    & \leq \sum_{i = 1}^{k - 1}\lvert a_i\rvert^2
+      \sum_{i = 1}^{k - 1}\lvert b_i\rvert^2 + (a_kb_k)(\bar{a}_k\bar{b}_k)\\
+    & = \sum_{i = 1}^{k - 1}\lvert a_i\rvert^2
+      \sum_{i = 1}^{k - 1}\lvert b_i\rvert^2 + \lvert a_k\rvert^2
+      \lvert b_k\rvert^2\\
+    & = \sum_{i = 1}^k\lvert a_i\rvert^2\sum_{i = 1}^k\lvert b_i\rvert^2
+  \end{align*}
+  Therefore, by the principal of mathematical induction, Cauchy's inequality is
+  true for all \(n\geq 1\) for \(n\in\mathbb{Z}^+\).
 \item
-  If \(\lvert a_i\rvert < 1\), \(\lambda_i\geq 1\) for \(i = 1,\ldots,n\) and
+  If \(\lvert a_i\rvert < 1\), \(\lambda_i\geq 0\) for \(i = 1,\ldots,n\) and
   \(\lambda_1 + \lambda_2 + \cdots + \lambda_n = 1\), show that
   \[
   \lvert\lambda_1a_1 + \lambda_2a_2 + \cdots + \lambda_na_n\rvert < 1.
   \]
+  Since \(\sum_{i = 1}^n\lambda_i = 1\) and \(\lambda_i\geq 0\),
+  \(0\leq \lambda_i < 1\).
+  By the triangle inequality,
+  \begin{align*}
+    \lvert\lambda_1a_1 + \lambda_2a_2 + \cdots + \lambda_na_n\rvert
+    & \leq\lvert\lambda_1\rvert\lvert a_1\rvert + \cdots +
+      \lvert a_n\rvert\lvert\lambda_n\rvert\\
+    & < \sum_{i = 1}^n\lambda_i\\
+    & = 1
+  \end{align*}
 \item
   Show that there are complex numbers \(z\) satisfying
   \[
@@ -386,7 +434,118 @@
 
 \subsection{Geometric Addition and Multiplication}
 
+\begin{enumerate}
+\item
+  Find the symmetric points of \(a\) with respect to the lines which bisect the
+  angles between the coordinate axes.
+\item
+  Prove that the points \(a_1,a_2,a_3\) are vertices of an equilateral triangle
+  if and only if \(a_1^2 + a_2^2 + a_3^2 = a_1a_2 + a_2a_3 + a_1a_3\).
+\item
+  Suppose that \(a\) and \(b\) are two vertices of a square.
+  Find the two other vertices in all possible cases.
+\item
+  Find the center and the radius of the circle which circumscribes the triangle
+  with vertices \(a_1,a_2,a_3\).
+  Express the result in symmetric form.
+\end{enumerate}
+
 \subsection{The Binomial Equation}
+
+\begin{enumerate}
+\item
+  Express \(\cos(3\varphi)\), \(\cos(4\varphi)\), and \(\sin(5\varphi)\) in
+  terms of \(\cos(\varphi)\) and \(\sin(\varphi)\).
+  \par\smallskip
+  For these problems, the sum addition identities will be employed; that is,
+  \begin{align*}
+    \cos(\alpha\pm\beta)
+    & = \cos(\alpha)\cos(\beta)\mp\sin(\alpha)\sin(\beta)\\
+    \sin(\alpha\pm\beta)
+    & = \sin(\alpha)\cos(\beta)\pm\sin(\beta)\cos(\alpha)
+  \end{align*}
+  We can write \(\cos(3\varphi)\) as \(\cos(2\varphi + \varphi)\) so
+  \begin{align*}
+    \cos(3\varphi)
+    & = \cos(2\varphi + \varphi)\\
+    & = \cos(2\varphi)\cos(\varphi) - \sin(2\varphi)\sin(\varphi)\\
+    & = \bigl[\cos^2(\varphi) - \sin^2(\varphi)\bigr]\cos(\varphi) -
+      2\sin(\varphi)\cos(\varphi)\sin(\varphi)\\
+    & = \cos^3(\varphi) - 3\sin^2(\varphi)\cos(\varphi)
+  \end{align*}
+  For \(\cos(4\varphi)\), we have
+  \begin{align*}
+    \cos(4\varphi)
+    & = \cos(2\varphi)\cos(2\varphi) - \sin(2\varphi)\sin(2\varphi)\\
+    & = \bigl[\cos^2(\varphi) - \sin^2(\varphi)\bigr]^2 -
+      4\sin^2(\varphi)\cos^2(\varphi)\\
+    & = \cos^4(\varphi) + \sin^4(\varphi) - 6\sin^2(\varphi)\cos^2(\varphi)
+  \end{align*}
+  For \(\sin(5\varphi)\), we have
+  \begin{align*}
+    \sin(5\varphi)
+    & = \sin(4\varphi)\cos(\varphi) + \sin(\varphi)\cos(4\varphi)\\
+    & = 2\sin(2\varphi)\cos(2\varphi)
+      \bigl[\cos^2(\varphi) - \sin^2(\varphi)\bigr]\cos(\varphi) +
+      \sin^5(\varphi) + \sin(\varphi)\cos^4(\varphi) -
+      6\sin^3(\varphi)\cos^2(\varphi)\\
+    & = 5\sin(\varphi)\cos^4(\varphi) - 10\sin^3(\varphi)\cos^2(\varphi) +
+      \sin^5(\varphi)
+  \end{align*}
+\item
+  Simplify \(1 + \cos(\varphi) + \cos(2\varphi) + \cdots + \cos(n\varphi)\) and
+  \(\sin(\varphi) + \cdots + \sin(n\varphi)\).
+  \par\smallskip
+  Instead of considering the two separate series, we will consider the series
+  \begin{align*}
+    1 + \cos(\varphi) + i\sin(\varphi) + \cdots + \cos(n\varphi) +
+    i\sin(n\varphi)
+    & = 1 + e^{i\varphi} + e^{2i\varphi} + \cdots + e^{ni\varphi}\\
+    & = \sum_{k = 0}^ne^{ki\varphi}\\
+    \intertext{Recall that
+    \(\sum_{k = 0}^{n - 1}r^k = \frac{1 - r^k}{1 - r}\). So}
+    & = \frac{1 - e^{i\varphi(n + 1)}}{1 - e^{i\varphi}}\\
+    & = \frac{e^{i\varphi(n + 1)} - 1}{e^{i\varphi} - 1}
+      \eqnumtag\label{1.2.2.2}
+  \end{align*}
+  Note that
+  \(\sin(\frac{\theta}{2}) = \frac{e^{i\theta/2} - e^{-i\theta/2}}{2i}\) so
+  \(2ie^{i\theta/2}\sin(\frac{\theta}{2}) = e^{i\theta} - 1\).
+  We can now write \cref{1.2.2.2} as
+  \begin{align*}
+    \sum_{k = 0}^ne^{ki\varphi}
+    & = \frac{e^{i\varphi(n + 1)/2}\sin\bigl(\frac{\varphi(n + 1)}{2}\bigr)}
+      {e^{i\varphi/2}\sin\bigl(\frac{\varphi}{2}\bigr)}\\
+    & = \frac{\sin\bigl(\frac{\varphi(n + 1)}{2}\bigr)}
+      {\sin\bigl(\frac{\varphi}{2}\bigr)}e^{in\varphi/2}
+      \eqnumtag\label{1.2.2.2sum}
+  \end{align*}
+  By taking the real and imaginary parts of \cref{1.2.2.2sum}, we get the
+  series for \(\sum_{k = 0}^n\cos(n\varphi)\) and
+  \(\sum_{k = 0}^n\sin(n\varphi)\), respectively.
+  \begin{align*}
+    \sum_{k = 0}^n\cos(n\varphi)
+    & = \frac{\sin\bigl(\frac{\varphi(n + 1)}{2}\bigr)}
+      {\sin\bigl(\frac{\varphi}{2}\bigr)}\cos\Bigl(\frac{n\varphi}{2}\Bigr)\\
+    \sum_{k = 0}^n\sin(n\varphi)
+    & = \frac{\sin\bigl(\frac{\varphi(n + 1)}{2}\bigr)}
+      {\sin\bigl(\frac{\varphi}{2}\bigr)}\sin\Bigl(\frac{n\varphi}{2}\Bigr)
+  \end{align*}
+\item
+  Express the fifth and tenth roots of unity in algebraic form.
+\item
+  If \(\omega\) is given by \(\omega = \cos\bigl(\frac{2\pi}{n}\bigr) +
+  i\sin\bigl(\frac{2\pi}{n}\bigr)\), prove that
+  \[
+  1 + \omega^h + \omega^{2h} + \cdots + \omega^{(n - 1)h} = 0
+  \]
+  for any integer \(h\) which is not a multiple of \(n\).
+\item
+  What is the value of
+  \[
+  1 - \omega^h + \omega^{2h} - \cdots + (-1)^{n - 1}\omega^{(n - 1)h}\mbox{?}
+  \]
+\end{enumerate}
 
 \subsection{Analytic Geometry}
 

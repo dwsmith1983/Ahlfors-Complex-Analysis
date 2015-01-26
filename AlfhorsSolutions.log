@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  23 JAN 2015 23:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  26 JAN 2015 00:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1085,9 +1085,9 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 11.39996pt on input line 5.
-[5] [6] [7] [8] [9])
+[5] [6] [7] [8] [9] [10] [11])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
- [10]
+ [12]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (./AlfhorsSolutions.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
@@ -1097,13 +1097,13 @@ Package rerunfilecheck Info: File `AlfhorsSolutions.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
  ) 
 Here is how much of TeX's memory you used:
- 18806 strings out of 493109
- 290605 string characters out of 6135010
- 467733 words of memory out of 5000000
- 21948 multiletter control sequences out of 15000+600000
- 36283 words of font info for 81 fonts, out of 8000000 for 9000
+ 18841 strings out of 493109
+ 290887 string characters out of 6135010
+ 468733 words of memory out of 5000000
+ 21952 multiletter control sequences out of 15000+600000
+ 38695 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,58p,354b,2073s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,13n,58p,354b,2073s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -1119,10 +1119,10 @@ sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></u
 sr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on AlfhorsSolutions.pdf (10 pages, 119808 bytes).
+Output written on AlfhorsSolutions.pdf (12 pages, 128909 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
- 57 named destinations out of 1000 (max. 500000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
  14945 words of extra memory for PDF output out of 17280 (max. 10000000)
 

@@ -5,8 +5,8 @@
 \contentsline {subsection}{\numberline {1.1.3}Justification}{7}{subsection.1.1.3}
 \contentsline {subsection}{\numberline {1.1.4}Conjugation, Absolute Value}{8}{subsection.1.1.4}
 \contentsline {subsection}{\numberline {1.1.5}Inequalities}{9}{subsection.1.1.5}
-\contentsline {section}{\numberline {1.2}The Geometric Representation of Complex Numbers}{10}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Geometric Addition and Multiplication}{10}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}The Binomial Equation}{10}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Analytic Geometry}{10}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}The Spherical Representation}{10}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.2}The Geometric Representation of Complex Numbers}{11}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Geometric Addition and Multiplication}{11}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}The Binomial Equation}{11}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Analytic Geometry}{12}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}The Spherical Representation}{12}{subsection.1.2.4}

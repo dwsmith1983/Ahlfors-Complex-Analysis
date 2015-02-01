@@ -6,6 +6,7 @@
    (TeX-run-style-hooks
     "latex2e"
     "chapter1"
+    "chapter2"
     "scrbook"
     "scrbook10"
     "complex")))

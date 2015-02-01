@@ -4,9 +4,13 @@
 \contentsline {subsection}{\numberline {1.1.2}Square Roots}{6}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}Justification}{7}{subsection.1.1.3}
 \contentsline {subsection}{\numberline {1.1.4}Conjugation, Absolute Value}{8}{subsection.1.1.4}
-\contentsline {subsection}{\numberline {1.1.5}Inequalities}{9}{subsection.1.1.5}
-\contentsline {section}{\numberline {1.2}The Geometric Representation of Complex Numbers}{11}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Geometric Addition and Multiplication}{11}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}The Binomial Equation}{11}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Analytic Geometry}{14}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}The Spherical Representation}{14}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.1.5}Inequalities}{10}{subsection.1.1.5}
+\contentsline {section}{\numberline {1.2}The Geometric Representation of Complex Numbers}{12}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Geometric Addition and Multiplication}{12}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}The Binomial Equation}{12}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Analytic Geometry}{15}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}The Spherical Representation}{15}{subsection.1.2.4}
+\contentsline {chapter}{\numberline {2}Complex Functions}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction to the Concept of Analytical Function}{17}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Limits and Continuity}{17}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Analytic Functions}{17}{subsection.2.1.2}

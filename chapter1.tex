@@ -335,6 +335,61 @@
   \smashoperator{\sum_{1\leq i\leq j\leq n}}
   \lvert a_i\bar{b}_j - a_j\bar{b}_i\rvert^2.
   \]
+  Let's consider
+  \[
+  \Bigl\lvert\sum_{i = 1}^na_ib_i\Bigr\rvert^2 +
+  \smashoperator{\sum_{1\leq i\leq j\leq n}}
+  \lvert a_i\bar{b}_j - a_j\bar{b}_i\rvert^2 =
+  \sum_{i = 1}^n\lvert a_i\rvert^2\sum_{i = 1}^n\lvert b_i\rvert^2.
+  \]
+  Then we can write the lefthand side as
+  \begin{align*}
+    \Bigl\lvert\sum_{i = 1}^na_ib_i\Bigr\rvert^2 +
+    \smashoperator{\sum_{1\leq i\leq j\leq n}}
+    \lvert a_i\bar{b}_j - a_j\bar{b}_i\rvert^2
+    & = \sum_{i = 1}^na_ib_i\sum_{j = 1}^n\bar{a}_j\bar{b}_j +
+      \smashoperator{\sum_{1\leq i\leq j\leq n}}(a_i\bar{b}_j - a_j\bar{b}_i)
+      (\bar{a}_ib_j - \bar{a}_jb_i)\\
+    & = \sum_{i,j = 1}^na_ib_i\bar{a}_j\bar{b}_j +
+      \sum_{i\leq j}\bigl(\lvert a_i\rvert^2\lvert b_j\rvert^2 +
+      \lvert a_j\rvert^2\lvert b_i\rvert^2\bigr) -
+      \sum_{i\leq j}\bigl(a_i\bar{a}_jb_i\bar{b}_j +
+      \bar{a}_ia_j\bar{b}_ib_j\bigr)\\
+    & = \sum_{i = j = 1}^n\lvert a_i\rvert^2\lvert b_i\rvert^2 +
+      \sum_{i\neq j}^na_ib_i\bar{a}_j\bar{b}_j
+      \begin{aligned}
+        + & \sum_{i\leq j}\bigl(\lvert a_i\rvert^2\lvert b_j\rvert^2 +
+        \lvert a_j\rvert^2\lvert b_i\rvert^2\bigr)\\
+        - & \sum_{i\leq j}\bigl(a_i\bar{a}_jb_i\bar{b}_j +
+        \bar{a}_ia_j\bar{b}_ib_j\bigr)
+      \end{aligned}
+  \end{align*}
+  For \(i\neq j\),
+  \(\sum_{i\neq j}^na_ib_i\bar{a}_j\bar{b}_j -
+  \sum_{i < j}\bigl(a_i\bar{a}_jb_i\bar{b}_j + \bar{a}_ia_j\bar{b}_ib_j\bigr) =
+  0\).
+  Thus, we now have
+  \[
+  \sum_{i = 1}^n\lvert a_i\rvert^2\lvert b_i\rvert^2 +
+  \sum_{i\leq j}\bigl(\lvert a_i\rvert^2\lvert b_j\rvert^2 +
+  \lvert a_j\rvert^2\lvert b_i\rvert^2\bigr).
+  \]
+  When the indicies of both series on the right hand side coincide,
+  \[
+  \sum_{i = 1}^n\lvert a_i\rvert^2\sum_{i = 1}^n\lvert b_i\rvert^2 =
+  \sum_{i = 1}^n\lvert a_i\rvert^2\lvert b_i\rvert^2.
+  \eqnumtag\label{1.1.4.5}
+  \]
+  That is, both \(a_i\) and \(b_i\) index together on the left of side
+  \cref{1.1.4.5}.
+  When \(a_i\) and \(b_i\) dont index together on the left side of
+  \cref{1.1.4.5},
+  \[
+  \sum_{i = 1}^n\lvert a_i\rvert^2\sum_{i = 1}^n\lvert b_i\rvert^2 =
+  \sum_{i\leq j}\bigl(\lvert a_i\rvert^2\lvert b_j\rvert^2 +
+  \lvert a_j\rvert^2\lvert b_i\rvert^2\bigr)
+  \]
+  as was needed to be shown.
 \end{enumerate}
 
 \subsection{Inequalities}
@@ -428,6 +483,38 @@
   if and only if \(\lvert a\rvert\leq\lvert c\rvert\).
   If this condition is fulfilled, what are the smallest and largest values
   \(\lvert z\rvert\)?
+  \par\smallskip
+  By the triangle inequality,
+  \[
+  \lvert z - a\rvert + \lvert z + a\rvert\geq
+  \lvert (z - a) - (z + a)\rvert = 2\lvert a\rvert
+  \]
+  so
+  \begin{align*}
+    2\lvert c\rvert & = \lvert z - a\rvert + \lvert z + a\rvert\\
+                    & \geq \lvert (z - a) - (z + a)\rvert\\
+                    & = 2\lvert a\rvert
+  \end{align*}
+  Thus, \(\lvert c\rvert\geq\lvert a\rvert\).
+  If \(\lvert a\rvert\leq\lvert c\rvert\), then let
+  \(z = \lvert c\rvert\frac{a}{\lvert a\rvert}\).
+  \begin{align*}
+    \lvert z - a\rvert + \lvert z + a\rvert
+    & \geq \lvert (z - a) + (z + a)\rvert\\
+    & = 2\lvert\lvert c\rvert\rvert\\
+    \intertext{since \(\frac{a}{\lvert a\rvert}\) is a unit vector.}
+    & = 2\lvert c\rvert
+  \end{align*}
+  Thus, \(2\lvert c\rvert\geq 2\lvert c\rvert\) which is equality.
+  \begin{align*}
+    2\lvert c\rvert & = \lvert z + a\rvert + \lvert z - a\rvert\\
+    4\lvert c\rvert^2 & =
+                        \bigl(\lvert z + a\rvert + \lvert z - a\rvert\bigr)^2\\
+                    & = 2(\lvert z\rvert^2 + \lvert a\rvert^2)\\
+                    & \leq 4(\lvert z\rvert^2 + \lvert a\rvert^2)\\
+    \lvert c\rvert^2 & \leq \lvert z\rvert^2 + \lvert a\rvert^2\\
+    \sqrt{\lvert c\rvert^2 - \lvert a\rvert^2} & \leq \lvert z\rvert
+  \end{align*}
 \end{enumerate}
 
 \section{The Geometric Representation of Complex Numbers}
@@ -631,6 +718,44 @@
   When does \(az + b\bar{z} + c = 0\) represent a line?
 \item
   Write the equation of an ellipse, hyperbola, parabola in complex form.
+  \par\smallskip
+  For \(x,y,h,k,a,b\in\mathbb{R}\) such that \(a,b\neq 0\), we define a real
+  ellipse as
+  \[
+  \frac{(x - h)^2}{a^2} + \frac{(y - k)^2}{b^2} = 1.
+  \]
+  Let \(z = \frac{x}{a} + i\frac{y}{b}\) and
+  \(z_0 = \frac{h}{a} + i\frac{k}{b}\).
+  If we expand the equation for an ellipse, we have
+  \[
+  \frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{h^2}{a^2} + \frac{k^2}{b^2} -
+  \frac{2xh}{a^2} - \frac{2yk}{b^2} = 1.
+  \]
+  Notice that \(\lvert z\rvert^2 = \frac{x^2}{a^2} + \frac{y^2}{b^2}\) and
+  \(\lvert z_0\rvert^2 = \frac{h^2}{a^2} + \frac{k^2}{b^2}\).
+  Now, let's write the ellipse as
+  \[
+  \lvert z\rvert^2 + \lvert z_0\rvert^2 - \frac{2xh}{a^2} - \frac{2yk}{b^2} +
+  \frac{yh}{ab}i - \frac{yh}{ab}i + \frac{xk}{ab}i - \frac{xk}{ab}i =
+  \lvert z\rvert^2 + \lvert z_0\rvert^2 - \bar{z}z_0 - z\bar{z}_0 = 1.
+  \]
+  Thus, the equation of an ellipse in the complex plane is
+  \[
+  (z - z_0)(\bar{z} - \bar{z}_0) = \lvert z - z_0\rvert^2 = 1\Rightarrow
+  \lvert z - z_0\rvert = 1
+  \]
+  where \(z\) and \(z_0\) are defined above.
+  Additionally, the standard form of an ellipse in the complex plane is of the
+  form
+  \[
+  \lvert z - a\rvert + \lvert z - b\rvert = c
+  \]
+  where \(c > \lvert a - b\rvert\).
+  Let \(a\) and \(b\) be the foci of a hyperbola.
+  Then when the magnitude of the difference of \(z\) and the foci is a constant, we will have a hyperbola.
+  \[
+  \bigl\lvert\lvert z - a\rvert - \lvert z - b\rvert\bigr\rvert = c
+  \]
 \item
   Prove that the diagonals of a parallelogram bisect each other and that the
   diagonals of a rhombus are orthogonal.
@@ -643,6 +768,10 @@
 \end{enumerate}
 
 \subsection{The Spherical Representation}
+
+\begin{enumerate}
+\item 
+\end{enumerate}
 
 %%% Local Variables:
 %%% mode: latex

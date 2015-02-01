@@ -1,0 +1,84 @@
+\chapter{Complex Functions}
+
+\section{Introduction to the Concept of Analytical Function}
+
+\subsection{Limits and Continuity}
+
+\subsection{Analytic Functions}
+
+\begin{enumerate}
+\item
+  If \(g(w)\) and \(f(z)\) are analytic functions, show that \(g(f(z))\) is
+  also analytic.
+  
+\item
+  Verify Cauchy-Riemann's equations for the function \(z^2\) and \(z^3\).
+  \par\smallskip
+  Let \(z = x + iy\).
+  Then \(z^2 = x^2 - y^2 + 2xyi\) and
+  \(z^3 = x^3 - 3xy^2 + i(3x^2y - y^3)\).
+  For \(f(z) = z^2\), the Cauchy-Riemann equations are
+  \begin{gather*}
+    u_x = 2x \qquad v_y = 2x\\
+    u_y = -2y \qquad -v_x = -2y
+  \end{gather*}
+  Thus, the Cauchy-Riemann equation satisfied for \(f(z) = z^2\).
+  For \(f(z) = z^3\), the Cauchy-Riemann equations are
+  \begin{gather*}
+    u_x = 3x^2 - 3y^2 \qquad v_y = 3x^2 - 3y^2\\
+    u_y = -6xy \qquad -v_x = -6xy
+  \end{gather*}
+  Thus, the Cauchy-Riemann equation satisfied for \(f(z) = z^3\).
+\item
+  Find the most general harmonic polynomial of the form
+  \(ax^3 + bx^2y + cxy^2 + dy^3\).
+  Determine the conjugate harmonic function and the corresponding analytic
+  function by integration and by the formal method.
+  \par\smallskip
+  In order to be harmonic, \(u(x,y) = ax^3 + bx^2y + cxy^2 + dy^3\) has to
+  satisfy \(\nabla^2u = 0\) so
+  \[
+  u_{xx} + u_{yy} = (3a + c)x + (3d + b)y = 0.
+  \]
+  Thus, \(3a = -c\) and \(3d = -b\) so
+  \[
+  u(x,y) = ax^3 - 3axy^2 - 3dx^2y + dy^3.
+  \]
+  To find the harmonic conjugate \(v(x,y\), we need to look at the
+  Cauchy-Riemann equations.
+  By the Cauchy-Riemann equations,
+  \[
+  u_x = 3ax^2 - 3ay^2 - 6dxy = v_y.
+  \]
+  Then we can integrate with respect to \(y\) to find \(v(x,y)\).
+  \[
+  v(x,y) = \int(3ax^2 - 3ay^2 - 6dxy)dy = 3ax^2y - ay^3 - 3dxy^2 + g(x)
+  \]
+  Using the second Cauchy-Riemann, we have
+  \[
+  v_x = 6axy - 3dy^2 + g'(x) = -u_y = 3dx^2 + 6axy - 3dy^2
+  \]
+  so \(g'(x) = 3dx^2\).
+  Then \(g(x) = dx^3 + C\) and
+  \[
+  v(x,y) = 3ax^2y - ay^3 - 3dxy^2 + dx^3 + C.
+  \]
+\item
+  Show that an analytic function cannot have a constant absolute value without
+  reducting to a constant.
+\item
+  Prove rigorously that the functions \(f(z)\) and \(\overline{f(\bar{z})}\)
+  are simultaneously analytic.
+\item
+  Prove that the functions \(u(z)\) and \(u(\bar{z})\) are simultaneously
+  harmonic.
+\item
+  Show that a harmonic function satisfies the formal differential equation
+  \[
+  \frac{\partial^2u}{\partial z\partial\bar{z}} = 0.
+  \]
+\end{enumerate}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

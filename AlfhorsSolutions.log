@@ -1,10 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  26 JAN 2015 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  1 FEB 2015 01:28
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**\input AlfhorsSolutions.tex
+**AlfhorsSolutions.tex
 (./AlfhorsSolutions.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2015/01/14 v3.15 KOMA-Script document class (book)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1198,39 +1200,44 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 11.39996pt on input line 5.
-[5] [6] [7] [8] [9] [10] [11]
-<Tikz/1-2prob3a.pdf, id=180, 57.80095pt x 57.29706pt>
+[5] [6] [7] [8] [9] [10] [11] [12]
+<Tikz/1-2prob3a.pdf, id=209, 57.80095pt x 57.29706pt>
 File: Tikz/1-2prob3a.pdf Graphic file (type pdf)
  <use Tikz/1-2prob3a.pdf>
-Package pdftex.def Info: Tikz/1-2prob3a.pdf used on input line 556.
+Package pdftex.def Info: Tikz/1-2prob3a.pdf used on input line 643.
 (pdftex.def)             Requested size: 144.54pt x 143.28947pt.
 
-[12 <./Tikz/1-2prob3a.pdf>]
-<Tikz/1-2prob3b.pdf, id=190, 58.32791pt x 57.29706pt>
+[13 <./Tikz/1-2prob3a.pdf>]
+<Tikz/1-2prob3b.pdf, id=220, 58.32791pt x 57.29706pt>
 File: Tikz/1-2prob3b.pdf Graphic file (type pdf)
  <use Tikz/1-2prob3b.pdf>
-Package pdftex.def Info: Tikz/1-2prob3b.pdf used on input line 585.
+Package pdftex.def Info: Tikz/1-2prob3b.pdf used on input line 672.
 (pdftex.def)             Requested size: 144.54pt x 142.02176pt.
 
-[13 <./Tikz/1-2prob3b.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
+[14 <./Tikz/1-2prob3b.pdf>]) (./chapter2.tex [15] [16
+
+
+]
+Chapter 2.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
+ [17] [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
  (./AlfhorsSolutions.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `AlfhorsSolutions.out' has not changed.
-(rerunfilecheck)             Checksum: 67F081455834E8E9227FE65B0D51A887;953.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
+(rerunfilecheck)             Checksum: BF0A1C33D5DD22185444D1592298CF62;1280.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 20193 strings out of 493109
- 314820 string characters out of 6135010
+ 20226 strings out of 493109
+ 315163 string characters out of 6135010
  504165 words of memory out of 5000000
- 23202 multiletter control sequences out of 15000+600000
- 41615 words of font info for 107 fonts, out of 8000000 for 9000
+ 23211 multiletter control sequences out of 15000+600000
+ 41774 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,13n,118p,390b,2075s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,18n,118p,383b,2075s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -1241,15 +1248,16 @@ exlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/
 texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/loca
 l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/loc
 al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on AlfhorsSolutions.pdf (14 pages, 138161 bytes).
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on AlfhorsSolutions.pdf (18 pages, 152069 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
- 81 named destinations out of 1000 (max. 500000)
- 17515 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 291 compressed objects within 3 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 17547 words of extra memory for PDF output out of 20736 (max. 10000000)
 

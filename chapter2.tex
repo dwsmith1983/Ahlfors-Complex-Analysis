@@ -65,7 +65,43 @@
   \]
 \item
   Show that an analytic function cannot have a constant absolute value without
-  reducting to a constant.
+  reducing to a constant.
+  \par\smallskip
+  Let \(f = u(x,y) + iv(x,y)\).
+  Then the modulus of \(f\) is \(\lvert f\rvert = \sqrt{u^2 + v^2}\).
+  If the modulus of \(f\) is constant, then \(u^2 + v^2 = c\) for some constant
+  \(c\).
+  If \(c = 0\), then \(f = 0\) which is constant.
+  Suppose \(c\neq 0\).
+  By taking the derivative with respect to \(x\) and \(y\), we have
+  \begin{align*}
+    0 & = \frac{\partial}{\partial x}(u^2 + v^2)\\
+      & = 2uu_x + 2vv_x\\
+      & = uu_x + vv_x\\
+    0 & = \frac{\partial}{\partial y}(u^2 + v^2)\\
+      & = uu_y + vv_y
+  \end{align*}
+  Since \(f\) is analytic, \(f\) satisfies the Cauchy-Riemann.
+  That is, \(u_x = v_y\) and \(u_y = -v_x\).
+  \begin{subequations}
+    \begin{align}
+      uv_y + vv_x & = 0\label{2.1.2.4a}\\
+      -uv_x + vv_y & = 0\label{2.1.2.4b}
+    \end{align}
+  \end{subequations}
+  Setting \cref{2.1.2.4a} equal to \cref{2.1.2.4b}, we have
+  \[
+  v_x(u + v) + v_y(u - v) = 0.
+  \]
+  Now, either \(v_x\) and \(v_y\) are zero, \(v_x\) and \(u - v\) are zero,
+  \(v_y\) and \(u + v\) are zero, or \(u + v\) and \(u - v\) are zero.
+  If \(v_x = v_y = 0\), then \(f\) is constant.
+  If \(v_x = 0\) and \(u - v = 0\), then \(u_y = 0\) and \(u = v\).
+  Since \(u = v\) and \(v_x = 0\), then so does \(u_x = 0\) and it also follows
+  that \(v_y = 0\); thus, \(f\) is a constant.
+  By the same argument, \(f\) is a constant when \(v_y = 0\) and \(u + v = 0\).
+  If \(u + v = 0\) and \(u - v = 0\), then \(u = \pm v\) so \(u = v = 0\) and
+  \(f\) is a constant.
 \item
   Prove rigorously that the functions \(f(z)\) and \(\overline{f(\bar{z})}\)
   are simultaneously analytic.

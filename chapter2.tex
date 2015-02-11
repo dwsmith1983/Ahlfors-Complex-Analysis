@@ -1,18 +1,16 @@
 \chapter{Complex Functions}
 
 \section{Introduction to the Concept of Analytical Function}
-No problem sets in Ahlfors.
 
 \subsection{Limits and Continuity}
-No problem sets in Ahlfors.
+No problem set in Ahlfors.
 
 \subsection{Analytic Functions}
 
 \begin{enumerate}
 \item
   If \(g(w)\) and \(f(z)\) are analytic functions, show that \(g(f(z))\) is
-  also analytic.
-  
+  also analytic.  
 \item
   Verify Cauchy-Riemann's equations for the function \(z^2\) and \(z^3\).
   \par\smallskip
@@ -107,15 +105,370 @@ No problem sets in Ahlfors.
 \item
   Prove rigorously that the functions \(f(z)\) and \(\overline{f(\bar{z})}\)
   are simultaneously analytic.
+  \par\smallskip
+  Let \(g(z) = \overline{f(\bar{z})}\) and suppose \(f\) is analytic.
+  Then \(g'(z)\)  is
+  \begin{align*}
+    g'(z) & = \lim_{\Delta z\to 0}\frac{g(z + \Delta z) - g(z)}{\Delta z}\\
+          & = \lim_{\Delta z\to 0}
+            \frac{\overline{f(\bar{z} + \overline{\Delta z})} -
+            \overline{f(\bar{z})}}{\Delta z}\\
+          & = \lim_{\Delta z\to 0}\biggl[
+            \overline{\frac{f(\bar{z} + \overline{\Delta z}) - f(\bar{z})}
+            {\overline{\Delta z}}}\biggr]\\
+    \intertext{Since conjugation is continuous, we can move the limit inside
+    the conjugation.}
+          & = \overline{\lim_{\Delta z\to 0}
+            \frac{f(\bar{z} + \overline{\Delta z}) - f(\bar{z})}
+            {\overline{\Delta z}}}\\
+          & = \overline{f'(\bar{z})}
+  \end{align*}
+  Thus, \(g\) is differentiable with derivative \(\overline{f'(\bar{z})}\).
+  Suppose \(\overline{f(\bar{z})}\) is analytic and let
+  \(\overline{g(\bar{z})} = f(z)\).
+  Then by the same argument, \(f\) is differentiable with derivative
+  \(\overline{g'(\bar{z})}\).
+  Therefore, \(f(z)\) and \(\overline{f(\bar{z})}\) are simultaneously
+  analytic.
+  \par\smallskip
+  We could also use the Cauchy-Riemann equations.
+  Let \(f(z) = u(x,y) + iv(x,y)\) where \(z = x + iy\) so \(\bar{z} = x - iy\).
+  Then \(\overline{f(\bar{z})} = \alpha(x,y) - i\beta(x,y)\) where
+  \(\alpha(x,y) = u(x,-y)\) and \(\beta(x,y) = v(x,-y)\).
+  In order for both to be analytic, they both need to satisfy the
+  Cauchy-Riemann equations.
+  That is, \(u_x = v_y\), \(u_y = -v_x\), \(\alpha_x = \beta_y\) and
+  \(\alpha_y = -\beta_x\).
+  \begin{align*}
+    u_x(x,y) & = v_y(x,y)\\
+    u_y(x,y) & = -v_x(x,y)\\
+    \alpha_x(x,y) & = u_x(x,-y)\\
+    \alpha_y(x,y) & = -u_y(x,-y)\\
+    -\beta_x(x,y) & = v_x(x,-y)\\
+    \beta_y(x,y) & = v_y(x,-y)
+  \end{align*}
+  Suppose that \(\overline{f(\bar{z})}\) satisfies the Cauchy-Riemann
+  equations.
+  Then \(\alpha_x = u_x(x,-y) = v_y(x,-y) = \beta_y\) and
+  \(\alpha_y = -u_y(x,-y) = v_x(x,-y) = -\beta_x\).
+  Therefore,
+  \begin{align*}
+    u_x(x,-y) & = v_y(x,-y)\\
+    u_y(x,-y) & = -v_x(x,-y)
+  \end{align*}
+  which means \(f(\bar{z})\) satisfies the Cauchy-Riemann equations.
+  Now, recall that \(\lvert z\rvert = \lvert\bar{z}\rvert\).
+  Since \(f(\bar{z})\) satisfies the Cauchy-Riemann equations, for an
+  \(\epsilon > 0\) there exists a \(\delta > 0\) such that when 
+  \(0 < \lvert\Delta z\rvert < \delta\),
+  \(\lvert f(\bar{z}) - \bar{z}_0\rvert = \lvert f(z) - z_0\rvert < \epsilon\).
+  Thus, \(\lim_{\Delta z\to 0}f(z) = z_0\) so \(f(z)\) is analytic if
+  \(\overline{f(\bar{z})}\) is analytic.
 \item
   Prove that the functions \(u(z)\) and \(u(\bar{z})\) are simultaneously
   harmonic.
+  \par\smallskip
+  Since \(u\) is the real part of \(f(z)\), \(u(z) = u(x,y)\) where
+  \(z = x + iy\).
+  Suppose \(u(z)\) is harmonic.
+  Then \(u(z)\) satisfies Laplace equation.
+  \[
+  \nabla^2u(z) = u_{xx} + u_{yy} = 0
+  \]
+  Now, \(u(\bar{z}) = u(x,-y)\) where
+  \(\frac{\partial^2}{\partial x^2}u(\bar{z}) = u_{xx}\) and
+  \(\frac{\partial^2}{\partial y^2}u(\bar{z}) = u_{yy}\) so
+  \[
+  \nabla^2u(\bar{z}) = u_{xx} + u_{yy} = 0.
+  \]
+  Since \(u(z)\) is harmonic, \(u_{xx} + u_{yy} = 0\) so it follows that
+  \(u(\bar{z})\) is harmonic as well.
 \item
   Show that a harmonic function satisfies the formal differential equation
   \[
   \frac{\partial^2u}{\partial z\partial\bar{z}} = 0.
   \]
+  Let \(u\) be a harmonic.
+  Then \(\nabla^2u = 0\).
+  \begin{subequations}
+    \begin{align}
+      \frac{\partial}{\partial\bar{z}}
+      & = \frac{1}{2}\Bigl(\frac{\partial}{\partial x} +
+        i\frac{\partial}{\partial y}\Bigr)\label{2.1.2.5barz}\\
+      \frac{\partial}{\partial z}
+      & = \frac{1}{2}\Bigl(\frac{\partial}{\partial x} -
+        i\frac{\partial}{\partial y}\Bigr)\label{2.1.2.5z}
+    \end{align}
+  \end{subequations}
+  From \cref{2.1.2.5barz}, we have
+  \[
+  \frac{1}{2}\Bigl(\frac{\partial}{\partial x} +
+  i\frac{\partial}{\partial y}\Bigr)u = \frac{1}{2}(u_x + iu_y).
+  \]
+  Then we have
+  \[
+  \frac{\partial^2u}{\partial z\partial\bar{z}} =
+  \frac{1}{4}\Bigl(\frac{\partial}{\partial x} -
+  i\frac{\partial}{\partial y}\Bigr)(u_x + iu_y) =
+  \frac{1}{4}\bigl[u_{xx} + u_{yy} + i(u_{yx} - u_{xy})\bigr]
+  \]
+  Since \(u\) is a solution to the Laplace equation, \(u\) has continuous first
+  and second derivatives.
+  That is, \(u\in C^2\) at a minimum.
+  By Schwarz's theorem, \(u_{xy} = u_{yx}\) so
+  \[
+  \frac{\partial^2u}{\partial z\partial\bar{z}} = 0.
+  \]
+  Schwarz's theorem states that if \(f\) is a function of two variables such
+  that \(f_{xy}\) and \(f_{yx}\) both exist and are continuous at some point
+  \((x_0,y_0)\), then \(f_{xy} = f_{yx}\).
 \end{enumerate}
+
+\subsection{Polynomials}
+
+No problem set in Ahlfors.
+
+\subsection{Rational Functions}
+
+\begin{enumerate}
+\item
+  Use the method of the text to develop
+  \[
+  \frac{z^4}{z^3 - 1}\qquad\text{and}\qquad\frac{1}{z(z + 1)^2(z + 2)^3}
+  \]
+  in partial fractions.
+  \par\smallskip
+  Let \(R(z) = \frac{z^4}{z^3 - 1}\).
+  Then we need to find \(G(z)\) and \(H(z)\) such that \(G(z) + H(z) = R(z)\).
+  \(G(z)\) is the singular part of \(R(z)\) and the degree of \(G(z)\) is order
+  of the pole at infinity.
+  Dividing \(z^4\) by \(z^3 - 1\), we get
+  \[
+  R(z) = z + \frac{z}{z^3 - 1}
+  \]
+  so \(G(z) = z\) and \(H(z) = \frac{z}{z^3 - 1}\).
+  The order of the pole at infinity is one.
+\item
+  If \(Q\) is a polynomial with distinct roots \(\alpha_1,\ldots,\alpha_n\),
+  and if \(P\) is a polynomial of degree \(< n\), show that
+  \[
+  \frac{P(z)}{Q(z)} = \sum_{k = 1}^n
+  \frac{P(\alpha_k)}{Q'(\alpha_k)(z - \alpha_k)}.
+  \]
+  Let's multiple by \(Q(z)\).
+  We then have
+  \[
+  P(z) = \sum_{k = 1}^n\frac{P(\alpha_k)}{Q'(\alpha_k)(z - \alpha_k)}Q(z)
+  \]
+  which are both polynomials of degree less than \(n\) and agreeing at
+  \(z = \alpha_k\).
+\item
+  Use the formula in the preceeding exercise to prove that there exists a
+  unique polynomial \(P\) or degree \(< n\) with given values \(c_k\) at the
+  points \(\alpha_k\) (Lagrange's interpolation polynomial).
+\item
+  What is the general form of a rational function which has absolute value
+  \(1\) on the circle \(\lvert z\rvert = 1\)?
+  In particular, how are the zeros and poles related to each other?
+\item
+  If a rational function is real on \(\lvert z\rvert = 1\), how are the zeros
+  and poles situated?
+\item
+  If \(R(z)\) is a rational function of order \(n\), how large and how small
+  can the order of \(R'(z)\) be?
+\end{enumerate}
+
+\section{Elementary Theory of Power Series}
+
+\subsection{Sequences}
+
+No problem sets in Ahlfors.
+
+\subsection{Series}
+
+No problem sets in Ahlfors.
+
+\subsection{Uniform Convergence}
+
+\begin{enumerate}
+\item
+  Prove that a convergent sequence is bounded.
+  \par\smallskip
+  Let \(\{a_n\}\) be a convergent sequence and \(\lim_{n\to\infty}a_n = a\).
+  Let \(\epsilon = 1\).
+  Then there exists an \(n > N\) such that \(\lvert a_n - a\rvert < 1\).
+  \begin{align*}
+    \lvert a_n\rvert & = \lvert a_n - a + a\rvert\\
+    \intertext{By the triangle inequality, we have}
+                     & \leq \lvert a_n - a\rvert + \lvert a\rvert\\
+    \lvert a_n\rvert - \lvert a\rvert & \leq \lvert a_n - a\rvert
+  \end{align*}
+  Therfore, we have that
+  \begin{align*}
+    \lvert a_n\rvert - \lvert a\rvert & \leq\lvert a_n - a\rvert < 1\\
+    \lvert a_n\rvert & < 1 + \lvert a\rvert
+  \end{align*}
+  For all \(n > N\), \(\lvert a_n\rvert < 1 + \lvert a\rvert\) so let
+  \(A = \max\bigl\{1 + \lvert a\rvert,\lvert a_1\rvert,\ldots,
+  \lvert a_N\rvert\bigr\}\).
+  Thus, \(\lvert a_n\rvert < A\) for some finite \(A\) and hence \(\{a_n\}\) is
+  bounded by \(A\).
+\item
+  If \(\lim_{n\to\infty}z_n = A\), prove that
+  \[
+  \lim_{n\to\infty}\frac{1}{n}(z_1 + z_2 + \cdots + z_n) = A.
+  \]
+  Given \(\epsilon > 0\) there exists some \(n > N\) such that
+  \[
+  \lvert z_n - A\rvert < \frac{N\epsilon}{2}.
+  \]
+  Now, since \(\lim_{n\to\infty}z_n = A\) converges, it is Cauchy.
+  Therefore, there exists \(n,m > N\) such that
+  \[
+  \lvert z_m - z_n\rvert < \frac{N\epsilon}{2}.
+  \]
+  Repeating this we have that \(\lvert z_1 + \cdots + z_n - nA\rvert\) or
+  \(\lvert 1/n(z_1 + \cdots + z_{n - 1}) - A + (z_n - A)/n\rvert\).
+  For a fixed \(N\), we can find \(n\) such that
+  \[
+  \sum_{i = 1}^{n - 1}\lvert z_i - A\rvert < \frac{N\epsilon}{2}
+  \]
+  We now have that
+  \begin{align*}
+    \lvert 1/n(z_1 + \cdots + z_{n - 1}) - A + (z_n - A)/n\rvert
+    & \leq \Bigl\lvert 1/n\sum_{i = 1}^{n - 1}(z_i - A)\Bigr\rvert +
+      1/n\lvert z_n - A\rvert\eqnumtag\label{2.2.3.2}\\
+    & \leq 1/n\sum_{i = 1}^{n - 1}\lvert z_i - A\rvert +
+      1/n\lvert z_n - A\rvert\\
+    & < 1/n\frac{N\epsilon}{2} + 1/n\frac{N\epsilon}{2}\\
+    & < \epsilon
+  \end{align*}
+  \Cref{2.2.3.2} can be written as
+  \(\lvert 1/n(z_1 + \cdots + z_n) - A\rvert < \epsilon\) so
+  \[
+  \lim_{n\to\infty}1/n(z_1 + \cdots + z_n) = A.
+  \]
+\item
+  Show that the sum of an absolutely convergent series does not change if the
+  terms are rearranged.
+  \par\smallskip
+  Let \(\sum a_n\) be an absolutely convergent series and \(\sum b_n\) be its
+  rearrangement.
+  Since \(\sum a_n\) converges absolutely, for \(\epsilon > 0\), there exists
+  a \(n > N\) such that \(\lvert s_n - A\rvert < \epsilon/2\) where \(s_n\) is
+  the \(n\)th partial sum.
+  Let \(t_n\) be the \(n\)th partial sum of \(\sum b_n\).
+  Then for some \(n > N\)
+  \begin{align*}
+    \lvert t_n - A\rvert & = \lvert t_n - s_n + s_n - A\rvert\\
+                         & \leq \lvert t_n - s_n\rvert + \lvert s_n - A\rvert\\
+                         & < \lvert t_n - s_n\rvert + \frac{\epsilon}{2}
+  \end{align*}
+  Since \(\sum a_n\) is absolutely convergent,
+  \(\sum_{k = n + 1}^{\infty}\lvert a_k\rvert\) converges to zero.
+  Let the remainder be \(r_n\).
+  Then for some \(N > n,n_1\), \(\lvert r_n - 0\rvert < \epsilon/2\).
+  Let \(M = \max\{k_1,k_2,\ldots,k_N\}\).
+  Then for some \(n > M\), we have
+  \[
+  \lvert t_n - s_n\rvert = \Bigl\lvert\sum_n^N a_n\Bigr\rvert\leq
+  \sum\lvert a_n\rvert\leq\sum_{k = n + 1}^{\infty}\lvert a_n\rvert = r_n <
+  \frac{\epsilon}{2}
+  \]
+  Thus, \(\lvert t_n - s_n\rvert < \epsilon\) and a rearrangement of an
+  absolutely convergent series does not changes its sum.
+\item
+  Discuss completely the convergence and uniform convergence of the sequence
+  \(\{nz^n\}_{n = 1}^{\infty}\).
+  \par\smallskip
+  Consider when \(\lvert z\rvert < 1\).
+  Then \(z^n = \frac{1}{w^n}\) where \(\lvert w\rvert > 1\).
+  By the ratio test, we ahve
+  \[
+  \lim_{n\to\infty}\Bigl\lvert\frac{(n + 1)w^n}{nw^{n + 1}}\Bigr\rvert =
+  \frac{1}{\lvert w\rvert}\lim_{n\to\infty}\frac{n + 1}{n} =
+  \frac{1}{\lvert w\rvert}
+  \]
+  In order for convergence, the limit of ratio test has to be less than one.
+  \[
+  \frac{1}{\lvert w\rvert} = \lvert z\rvert
+  \]
+  which is less than one by our assumption so \(\{nz^n\}\) converges
+  absolutely in the disc less than one.
+  Now, let's consider \(\lvert z\rvert\geq 1\).
+  By the ratio test, we get
+  \(\lim_{n\to\infty}\lvert a_{n + 1}/a_n\rvert = \lvert z\rvert\geq 1\) by our
+  assumption.
+  When the limit is one, we can draw no conclusion about convergence, but when
+  the limit is greater than one, the sequence diverges.
+  For \(\lvert z\rvert < 1\), \(\epsilon > 0\), and \(n > N\),
+  \(\lvert nz^n - 0\rvert < \epsilon\) for uniform convergence.
+  Take \(z = 9/10\), \(n = 100\), and \(\epsilon = 0.001\).
+  Then
+  \begin{gather*}
+    \lvert nz^n\rvert = n\lvert z\rvert^n < \epsilon\\
+    \lvert z\rvert^n < \frac{\epsilon}{n}\\
+    0.000026 \not < 0.00001
+  \end{gather*}
+  Thus, the sequence is not uniformly convergent in the disc with radius less
+  than one.
+  Let's consider the closed disc \(\lvert z\rvert\leq R\) where \(R\in(0,1)\).
+  Now \(\lvert nz^n\rvert\) is bounded above by a convergent geometric series,
+  say \(\sum r^n\) where \(\lvert r\rvert < 1\).
+  Then \(\lvert nz^n\rvert < ar^n\) for \(\lvert z\rvert\leq R\) and \(a\) a
+  real constant.
+  Let \(M_n = ar^n\) where \(M_n\) is the \(M\) in the Weierstrass M-test.
+  Thus, \(\{nz^n\}\) is uniformly convergent in a closed disc less than one.
+\item
+  Discuss the uniform convergence of the series
+  \[
+  \sum_{n = 1}^{\infty}\frac{x}{n(1 + nx^2)}
+  \]
+  for real values of \(x\).
+  \par\smallskip
+  By the AM-GM inequality, \((x + y)/2\geq \sqrt{xy}\), we have
+  \[
+  1 + nx^2\geq 2\lvert x\rvert\sqrt{n}
+  \]
+  or \(\frac{1}{2\lvert x\rvert\sqrt{n}}\geq\frac{1}{1 + nx^2}\).
+  Let \(f_n(x) = \frac{x}{n(1 + nx^2)}\).
+  Then
+  \[
+  \lvert f_n(x)\rvert\leq \Bigl\lvert\frac{x}{2xn^{3/2}}\Bigr\rvert =
+  \Bigl\lvert\frac{1}{2n^{3/2}}\Bigr\rvert = M_n
+  \]
+  For a fixed \(x\), \(\sum\lvert f_n(x)\rvert\leq M_n < \infty\) so
+  \(\sum\lvert f_n(x)\rvert\) is absolutely convergent.
+  Thus, \(\sum f_n(x)\) is pointwise convergent to \(f(x)\).
+  Let \(\epsilon > 0\) be given and \(s_n = \sum_{k = 1}^nf_k(x)\) be \(n\)th
+  partial sum.
+  Let \(n > N\) such that
+  \[
+  \lvert f(x) - s_n\rvert = \Bigl\lvert\sum_{k = 1}^{\infty}f_k(x) -
+  \sum_{k = 1}^nf_k(x)\Bigr\rvert =
+  \Bigl\lvert\sum_{k = n + 1}^{\infty}f_k(x)\Bigr\rvert\leq
+  \sum_{k = n + 1}^{\infty}\lvert f_k(x)\rvert
+  \]
+  Since \(\sum M_k\) converges to some limit, for \(n\) sufficiently large,
+  \(\sum_{k = n + 1}^{\infty}M_k < \epsilon\).
+  Select \(N\) such that this is true.
+  Then
+  \[
+  \lvert f(x) - s_n\rvert\leq\sum_{k = n + 1}^{\infty}\lvert f_k(x)\rvert\leq
+  \sum_{k = n + 1}^{\infty}M_k < \epsilon
+  \]
+  Therefore, \(\sum f_n(x)\) where \(f_n(x) = \frac{x}{n(1 + nx^2)}\) is
+  uniformly convergent by the Weierstrass M-test.
+\item
+  If \(U = u_1 + u_2 + \cdots,\) \(V = v_1 + v_2 + \cdots\) are convergent
+  series, prove that
+  \(UV = u_1v_1 + (u_1v_2 + u_2v_2) + (u_1v_3 + u_2v_2 + u_3v_1) + \cdots\)
+  provided that at least one of the series is absolutely convergent.
+  (It is easy if both series are absolutely convergent.
+  Try to rearrange the proof so economically that the absolute convergence of
+  the second series is not needed.)
+\end{enumerate}
+
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t

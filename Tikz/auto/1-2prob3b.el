@@ -1,5 +1,5 @@
 (TeX-add-style-hook
- "1-2prob3a"
+ "1-2prob3b"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("standalone" "tikz")))

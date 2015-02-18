@@ -1,12 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  10 FEB 2015 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  18 FEB 2015 00:56
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**AhlforsSolutions.tex
+**\input AhlforsSolutions.tex
 (./AhlforsSolutions.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2015/01/14 v3.15 KOMA-Script document class (book)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1237,13 +1235,13 @@ LaTeX Font Info:    Try loading font information for U+fplmbb on input line 322
 .
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [9] [10] [11] [12] <Tikz/1-2prob3a.pdf, id=245, 57.80095pt x 57.29706pt>
+) [9] [10] [11] [12] <Tikz/1-2prob3a.pdf, id=280, 57.80095pt x 57.29706pt>
 File: Tikz/1-2prob3a.pdf Graphic file (type pdf)
 
 <use Tikz/1-2prob3a.pdf>
 Package pdftex.def Info: Tikz/1-2prob3a.pdf used on input line 643.
 (pdftex.def)             Requested size: 144.54pt x 143.28947pt.
- <Tikz/1-2prob3b.pdf, id=246, 58.32791pt x 57.29706pt>
+ <Tikz/1-2prob3b.pdf, id=281, 58.32791pt x 57.29706pt>
 File: Tikz/1-2prob3b.pdf Graphic file (type pdf)
 
 <use Tikz/1-2prob3b.pdf>
@@ -1255,25 +1253,26 @@ Package pdftex.def Info: Tikz/1-2prob3b.pdf used on input line 672.
 
 ]
 Chapter 2.
-[17] [18] [19] [20] [21])
+[17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
- [22]
+ [28]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
- (./AhlforsSolutions.aux)
+
+(./AhlforsSolutions.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `AhlforsSolutions.out' has not changed.
-(rerunfilecheck)             Checksum: 19458BB86DCE44F1EFF7F6A1EB800F1B;1711.
+(rerunfilecheck)             Checksum: 14446E04132148050CBFE7A1CAA3BD2B;2256.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 20368 strings out of 493109
- 317310 string characters out of 6135010
+ 20444 strings out of 493109
+ 318097 string characters out of 6135010
  504345 words of memory out of 5000000
- 23254 multiletter control sequences out of 15000+600000
- 46528 words of font info for 165 fonts, out of 8000000 for 9000
+ 23277 multiletter control sequences out of 15000+600000
+ 46847 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,18n,118p,383b,2130s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,18n,118p,390b,2130s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
@@ -1295,10 +1294,10 @@ live/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on AhlforsSolutions.pdf (22 pages, 249169 bytes).
+Output written on AhlforsSolutions.pdf (28 pages, 276091 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 377 compressed objects within 4 object streams
- 129 named destinations out of 1000 (max. 500000)
- 23739 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 548 PDF objects out of 1000 (max. 8388607)
+ 492 compressed objects within 5 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 23795 words of extra memory for PDF output out of 24883 (max. 10000000)
 

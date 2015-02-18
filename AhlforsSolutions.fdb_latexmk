@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1423626884 "AhlforsSolutions.tex" "AhlforsSolutions.pdf" "AhlforsSolutions" 1423626884
+["pdflatex"] 1424238197 "AhlforsSolutions.tex" "AhlforsSolutions.pdf" "AhlforsSolutions" 1424238198
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -72,6 +72,7 @@
   "/usr/local/texlive/2014/texmf-dist/fonts/vf/public/eulervm/zeurm7.vf" 1170375113 920 24825c5da261b87750036793d4c1b875 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/vf/public/eulervm/zeusm10.vf" 1170375113 1068 874a491153ebfb8983ddb889dab0c967 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/vf/public/eulervm/zeusm7.vf" 1170375113 1064 9fa5227d191102216c29250adb90676f ""
+  "/usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf" 1136768653 1532 73e2c76c81e4f977ab65540630baf4f0 ""
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
@@ -186,18 +187,18 @@
   "/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1423588273 1645062 0acf4ac8d364929868c9f64fb8c9eb4c ""
   "/usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt" 1421681540 3847283 c231c55bcd3060e9f37b978a4748ca24 ""
   "/usr/local/texlive/2014/texmf.cnf" 1409016898 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "AhlforsSolutions.aux" 1423626884 5895 6d04cbc045c1c0b2b22a7fee793f3ac6 ""
-  "AhlforsSolutions.out" 1423626884 1711 19458bb86dce44f1eff7f6a1eb800f1b ""
+  "AhlforsSolutions.aux" 1424238198 7706 c48b10408189b39acda1e4ec7c1d2aa2 ""
+  "AhlforsSolutions.out" 1424238198 2256 14446e04132148050cbfe7a1caa3bd2b ""
   "AhlforsSolutions.tex" 1422753187 610 b4309fac808d58cdfba1f2dfdf78f947 ""
-  "AhlforsSolutions.toc" 1423626884 1948 314e6f795589dfa59855c4d66df049ea ""
+  "AhlforsSolutions.toc" 1424238198 2569 3aaf12f895d1bb5a3162a7d5eb1a220e ""
   "Tikz/1-2prob3a.pdf" 1423194203 2554 4de4e18fdfd622636d6a0e4d4075569e ""
   "Tikz/1-2prob3b.pdf" 1423194266 2889 cece2ecff15229e70848856c009431bf ""
   "chapter1.tex" 1423075647 28513 8dcd3d146beefbd628b1de3b15945480 ""
-  "chapter2.tex" 1423626880 17796 f87daedb12e844bda4ed1b9aa30979c5 ""
+  "chapter2.tex" 1424238195 30964 7d1c4678630795dfea4dd154f3fe31d0 ""
   "complex.sty" 1423186691 2301 3fe0ede98bc538301e3995a26f4d7741 ""
   (generated)
-  "AhlforsSolutions.pdf"
   "AhlforsSolutions.toc"
+  "AhlforsSolutions.pdf"
   "AhlforsSolutions.out"
   "AhlforsSolutions.aux"
   "AhlforsSolutions.log"

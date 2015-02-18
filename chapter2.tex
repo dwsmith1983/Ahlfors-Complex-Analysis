@@ -263,7 +263,7 @@ No problem set in Ahlfors.
   which are both polynomials of degree less than \(n\) and agreeing at
   \(z = \alpha_k\).
 \item
-  Use the formula in the preceeding exercise to prove that there exists a
+  Use the formula in the preceding exercise to prove that there exists a
   unique polynomial \(P\) or degree \(< n\) with given values \(c_k\) at the
   points \(\alpha_k\) (Lagrange's interpolation polynomial).
 \item
@@ -303,7 +303,7 @@ No problem sets in Ahlfors.
                      & \leq \lvert a_n - a\rvert + \lvert a\rvert\\
     \lvert a_n\rvert - \lvert a\rvert & \leq \lvert a_n - a\rvert
   \end{align*}
-  Therfore, we have that
+  Therefore, we have that
   \begin{align*}
     \lvert a_n\rvert - \lvert a\rvert & \leq\lvert a_n - a\rvert < 1\\
     \lvert a_n\rvert & < 1 + \lvert a\rvert
@@ -383,13 +383,13 @@ No problem sets in Ahlfors.
   \par\smallskip
   Consider when \(\lvert z\rvert < 1\).
   Then \(z^n = \frac{1}{w^n}\) where \(\lvert w\rvert > 1\).
-  By the ratio test, we ahve
+  By the ratio test, we have
   \[
   \lim_{n\to\infty}\Bigl\lvert\frac{(n + 1)w^n}{nw^{n + 1}}\Bigr\rvert =
   \frac{1}{\lvert w\rvert}\lim_{n\to\infty}\frac{n + 1}{n} =
   \frac{1}{\lvert w\rvert}
   \]
-  In order for convergence, the limit of ratio test has to be less than one.
+  In order for convergence, the ratio test has to be less than one.
   \[
   \frac{1}{\lvert w\rvert} = \lvert z\rvert
   \]
@@ -467,6 +467,403 @@ No problem sets in Ahlfors.
   (It is easy if both series are absolutely convergent.
   Try to rearrange the proof so economically that the absolute convergence of
   the second series is not needed.)
+\end{enumerate}
+
+\subsection{Power Series}
+
+\begin{enumerate}
+\item
+  Expand \((1 - z)^{-m}\), \(m\) a positive integer, in powers of \(z\).
+  \par\smallskip
+  The Binomial theorem states that
+  \((1 + x)^n = \sum_{k = 0}^{\infty}\binom{n}{k}x^k\).
+  In our case, we have
+  \[
+  (1 - z)^{-m} = \sum_{k = 0}^{\infty}\binom{-m}{k}(-z)^k\eqnumtag
+  \label{2.2.4.1}
+  \]
+  where \(\binom{-m}{k} = (-1)^k\binom{m + k - 1}{k}\).
+  Then \cref{2.2.4.1} can be written as
+  \[
+  (1 - z)^{-m} = \sum_{k = 0}^{\infty}\binom{m + k - 1}{k}z^k = 1 + mz +
+  \frac{m(m + 1)}{2!}z^2 + \cdots.
+  \]
+\item
+  Expand \(\frac{2z + 3}{z + 1}\) in powers of \(z - 1\).
+  What is the radius of convergence?
+  \par\smallskip
+  Let's just consider \(\frac{1}{z + 1}\) for the moment.
+  \[
+  \frac{1}{z + 1} = \frac{1}{z - 1 + 2} = \frac{1/2}{1 + \frac{z + 1}{2}} =
+  \frac{1}{2}\sum_{n = 0}^{\infty}(-1)^n\Bigl(\frac{z + 1}{2}\Bigr)^n
+  \]
+  From the full expressing, we obtain
+  \[
+  \frac{2z + 3}{z + 1} = \frac{2z + 3}{2}
+  \sum_{n = 0}^{\infty}(-1)^n\Bigl(\frac{z + 1}{2}\Bigr)^n.
+  \]
+  The radius of convergence can be found by
+  \(1/R = \limsup_{n\to\infty}\sqrt[n]{\lvert a_n\rvert}\).
+  Therefore, the radius of convergence is
+  \[
+  R = 1/\limsup_{n\to\infty}\sqrt[n]{\Bigl\lvert (-1)^n
+    \frac{1}{2^n}\Bigr\rvert} = \lvert 2\rvert = 2
+  \]
+\item
+  Find the radius of convergence of the following power series:
+  \[
+  \sum n^pz^n,\quad\sum\frac{z^n}{n!},\quad\sum n!z^n,\quad\sum q^{n^2}z^n,
+  \quad\sum z^{n!}
+  \]
+  where \(\lvert q\rvert < 1\).
+  \par\smallskip
+  For \(\sum n^pz^n\), we can use the inverse of argument of the ratio test to
+  determine the radius of convergence; that is,
+  \[
+  R = \lim_{n\to\infty}\Big\lvert\frac{n^p}{(n + 1)^p}\Bigr\rvert
+  = \lim_{n\to\infty}\frac{n^p}{(n + 1)^p} = 1
+  \]
+  For \(\sum\frac{z^n}{n!}\), we can use the fact that the sum is \(e^z\) which
+  is entire or the method used previously.
+  Since \(e^z\) is entire, the radius of convergence is \(R = \infty\).
+  \[
+  R = \lim_{n\to\infty}\Big\lvert\frac{(n + 1)!}{n!}\Bigr\rvert
+  = \lim_{n\to\infty}\frac{n!(n + 1)}{n!} = \infty
+  \]
+  For \(\sum n!z^n\), we use the modified ratio test again.
+  \[
+  R = \lim_{n\to\infty}\Bigl\lvert\frac{n!}{(n + 1)!}\Bigr\rvert = 0
+  \]
+  For \(\sum q^{n^2}z^n\), we will use the ratio test.
+  \[
+  R = \lim_{n\to\infty}\Bigl\lvert\frac{q^{n^2}}{q^{(n + 1)^2}}\Bigr\vert =
+  \frac{1}{\lvert q\rvert}
+  \lim_{n\to\infty}\Bigl\lvert\frac{1}{q^{2n}}\Bigr\rvert =
+  \infty
+  \]
+  For \(\sum z^{n!}\), we will use the root test.
+  \[
+  R = 1/\limsup_{n\to\infty}\sqrt[n]{\lvert z^{(n - 1)!}\rvert^n} =
+  1/\limsup_{n\to\infty}\lvert z\rvert^{(n - 1)!}
+  \]
+  When \(\lvert z\rvert < 1\), \(R = \infty\), and when \(\lvert z\rvert > 1\),
+  \(R = 0\).
+\item
+  If \(\sum a_nz^n\) has a radius of convergence \(R\), what is the radius of
+  convergence of \(\sum a_nz^{2n}\)? of \(\sum a_n^2z^n\)?
+  \par\smallskip
+  Since \(\sum a_nz^n\) has a radius of convergence \(R\),
+  \[
+  R = \lim_{n\to\infty}\Bigl\lvert\frac{a_n}{a_{n + 1}}\Bigr\rvert.
+  \]
+  For \(\sum a_nz^{2n} = z^2\sum a_nz^n\), we have
+  \[
+  \lvert z\rvert^2\lim_{n\to\infty}\Bigl\lvert\frac{a_n}{a_{n + 1}}\Bigr\rvert
+  = \lvert z\rvert^2R
+  \]
+  so the radius of convergence is \(\sqrt{R}\).
+  For \(\sum a_n^2z^n\), we have
+  \[
+  \lim_{n\to\infty}\Bigl\lvert\frac{a_n}{a_{n + 1}}\Bigr\rvert^2 = R^2.
+  \]
+\item
+  If \(f(z) = \sum a_nz^n\), what is \(\sum n^3a_nz^n\)?
+  \par\smallskip
+  Let's write out the first few terms of
+  \[
+  \sum n^3a_nz^n = a_1z + 8a_2z^2 + 27a_3z^3 + 64a_4z^4 + \cdots
+  \]
+  Let's consider the first three derivatives of \(f(z)\).
+  \begin{align*}
+    f'(z) & = \sum na_nz^{n - 1}\\
+    zf'(z) & = \sum na_nz^n\\
+          & = a_1z + 2a_2z^2 + 3a_3z^3 + \cdots\eqnumtag\label{2.2.4.51}\\
+    f''(z) & = \sum n(n - 1)a_nz^{n - 2}\\
+    z^2f''(z) & = \sum n(n - 1)a_nz^n\\
+          & = 2a_2z^2 + 6a_3z^3 + 12a_4z^4 + \cdots\eqnumtag\label{2.2.4.52}\\
+    f'''(z) & = \sum n(n - 1)(n - 2)a_nz^{n - 3}\\
+    z^3f'''(z) & = \sum n(n - 1)(n - 2)a_nz^n\\
+          & = 6a_3z^3 + 24a_4z^4 + 60a_5z^5 + \cdots\eqnumtag\label{2.2.4.53}
+  \end{align*}
+  If we add \cref{2.2.4.51,2.2.4.52,2.2.4.53}, we have
+  \[
+  zf'(z) + z^2f''(z) + z^3f'''(z) = a_1z + 4a_2z^2 + 15a_3z^3 + \cdots\neq
+  \sum n^3a_nz^n
+  \]
+  However, consider \(3z^2f''(z) = 6a_2z^2 + 18a_3z^3 + 36a_4z^4 + \cdots\).
+  Then
+  \[
+  zf'(z) + 3z^2f''(z) + z^3f'''(z) = a_1z + 8a_2z^2 + 27a_3z^3 + 64a_4z^4
+  \cdots = \sum n^3a_nz^n.
+  \]
+\item
+  If \(\sum a_nz^n\) and \(\sum b_nz_n\) have radii of convergence \(R_1\) and
+  \(R_2\), show that the radii of convergence of \(\sum a_nb_nz^n\) is at least
+  \(R_1R_2\).
+  \par\smallskip
+  Let \(\epsilon > 0\) be given. Then there exists \(n > N\) such that 
+  \[
+  \lvert a_n\rvert^{1/n} < 1/R_1 + \epsilon,\qquad \lvert b_n\rvert^{1/n} <
+  1/R_2 + \epsilon
+  \]
+  since \(\limsup_{n\to\infty}\lvert a_n\rvert^{1/n} = 1/R_1\) so
+  \(\lvert a_n\rvert^{1/n} < 1/R_1 + \epsilon\) and similarly for \(b_n\).
+  Multiplying we obtain
+  \[
+  \lvert a_nb_n\rvert^{1/n} < \frac{1}{R_1R_2} + \epsilon(1/R_1 + 1/R_2) +
+  \epsilon^2
+  \] 
+  Then 
+  \[
+  \frac{1}{R}\leq \frac{1}{R_1R_2}\Rightarrow R_1R_2\leq R
+  \]
+\item
+  If \(\lim_{n\to\infty}\lvert a_n\rvert/\lvert a_{n + 1}\rvert = R\), prove
+  that \(\sum a_nz^n\) has a radius of convergence of \(R\).
+  \par\smallskip
+  Let \(\epsilon > 0\) be given.
+  Suppose \(\lvert z\rvert < R\).
+  Pick \(\epsilon\) such that \(\lvert z\rvert < R - \epsilon\).
+  Then for some \(n > N\)
+  \begin{alignat*}{2}
+    \biggl\lvert\Bigl\lvert\frac{a_n}{a_{n + 1}}\Bigr\rvert - R\biggr\rvert
+    & \leq R - \Bigl\lvert\frac{a_n}{a_{n + 1}}\Bigr\rvert &&{} < \epsilon\\
+    R - \epsilon & < \Bigl\lvert\frac{a_n}{a_{n + 1}}\Bigr\rvert\eqnumtag
+    \label{2.2.4.7}
+  \end{alignat*}
+  For \(n > N\), we can write
+  \[
+  \Bigl\lvert\frac{a_N}{a_n}\Bigr\rvert =
+  \Bigl\lvert\frac{a_Na_{N + 1}\cdots a_{n - 1}}{a_{N + 1}a_{N + 2}\cdots a_n}
+  = \Bigl\lvert\frac{a_N}{a_{N + 1}}\frac{a_{N + 1}}{a_{N + 2}}\cdots \frac{a_{n - 1}}{a_n}\Bigr\rvert\eqnumtag\label{2.2.4.72}
+  \]
+  For \(n > N\), we have that from \cref{2.2.4.7},
+  \(R - \epsilon < \frac{a_N}{a_{N + 1}}\).
+  Thus, we can \cref{2.2.4.72} as
+  \begin{align*}
+    (R - \epsilon)^{n - N} & < \Bigl\lvert\frac{a_N}{a_n}\Bigr\rvert\\
+    \lvert a_n\rvert & < \frac{\lvert a_N\rvert}{(R - \epsilon)^{n - N}}\\
+    \lvert a_nz^n\rvert & < \lvert a_Nz^N\rvert\Bigl(\frac{\lvert z\rvert}
+                          {R - \epsilon}\Bigr)^{n - N}
+  \end{align*}
+  Since \(\epsilon\) was chosen such that \(\lvert z\rvert < R - \epsilon\), we
+  that \(\frac{\lvert z\rvert}{R - \epsilon} < 1\) and
+  \[
+  \lvert a_nz^n\rvert < \lvert a_Nz^N\rvert
+  \]
+  where \(\lvert a_Nz^N\rvert < \infty\) since it is a convergent geometric
+  series.
+  Therefore, \(\sum a_nz^n\) converges absolutely with a radius of convergence
+  of \(R\).
+\item
+  For what values of \(z\) is
+  \[
+  \sum_{n = 0}^{\infty}\Bigl(\frac{z}{1 + z}\Bigr)^n
+  \]
+  convergent?
+  \par\smallskip
+  In order for series to converge
+  \(\limsup_{n\to\infty}\sqrt[n]{\lvert a_n\rvert} < 1\).
+  Then
+  \[
+  \limsup_{n\to\infty}\sqrt[n]{\lvert z/(z+1)\rvert^n} =
+  \Bigl\lvert\frac{z}{z + 1}\Bigr\rvert < 1
+  \]
+  or \(\lvert z\rvert^2 < (1 + z)(1 + \bar{z}) = 1 + 2\Re\{z\} +
+  \lvert z\rvert^2\) so the series converges when
+  \[
+  0 < 1 + 2\Re\{z\}.
+  \]
+\item
+  Same question for
+  \[
+  \sum_{n = 0}^{\infty}\frac{z^n}{1 + z^{2n}}.
+  \]
+  Consider the following two equations:
+  \begin{align*}
+    \lvert 1\rvert & = \lvert 1 + z^{2n} - z^{2n}\rvert\\
+                   & \leq \lvert 1 + z^{2n}\rvert + \lvert z^{2n}\rvert\\
+    1 - \lvert z^{2n}\rvert & \leq \lvert 1 + z^{2n}\rvert\eqnumtag
+                              \label{2.2.4.9a}\\
+    \lvert z^{2n}\rvert & = \lvert 1 - 1 + z^{2n}\rvert\\
+                   & \leq \lvert 1 + z^{2n}\rvert + 1\\
+    \lvert z^{2n}\rvert - 1 & \leq \lvert 1 + z^{2n}\rvert\eqnumtag
+                              \label{2.2.4.9b}\\
+  \end{align*}
+  From \cref{2.2.4.9a,2.2.4.9b}, the triangle inequality, we have that
+  \[
+  \bigl\lvert 1 - \lvert z^{2n}\rvert\bigr\rvert\leq\lvert 1 + z^{2n}\rvert.
+  \]
+  There exists an \(m > 1\) such that
+  \[
+  \frac{\lvert z^{2n}\rvert}{m}\leq
+  \bigl\lvert 1 - \lvert z^{2n}\rvert\bigr\rvert.
+  \]
+  By the root test,
+  \[
+  \limsup_{n\to\infty}\sqrt[n]{\frac{m\lvert z\rvert^n}{\lvert z^2\rvert^n}} =
+  \limsup_{n\to\infty}\frac{\sqrt[n]{m}}{\lvert z\rvert} =
+  \frac{1}{\lvert z\rvert} < 1
+  \]
+  When \(\lvert z\rvert > 1\), the convergence of the ratio test
+  \(\frac{1}{\lvert z\rvert} < 1\) leads to \(\lvert z\rvert > 1\).
+  If \(\lvert z\rvert < 1\), then \(1/\lvert z\rvert > 1\) where we can write
+  \(1/\lvert z\rvert = \lvert z_1\rvert\).
+  Since the choice dummy variables is arbitrary, \(\lvert z\rvert < 1\).
+  In other words, the series will converge when \(\lvert z\rvert > 1\) or
+  \(\lvert z\rvert < 1\).
+  Suppose \(\lvert z\rvert = 1\).
+  Then by the limit test,
+  \[
+  \lim_{n\to\infty}\frac{1}{1^n + 1^{-n}} = \frac{1}{2}\neq 0;
+  \]
+  therefore, the series diverges.
+\end{enumerate}
+
+\subsection{Abel's Limit Theorem}
+
+No problem set in Ahlfors.
+
+\section{The Exponential and Trigonometric Functions}
+
+\subsection{The Exponential}
+
+No problem set in Ahlfors.
+
+\subsection{The Trigonometric Functions}
+
+\begin{enumerate}
+\item
+  Find the values of \(\sin(i)\), \(\cos(i)\), and \(\tan(1 + i)\).
+  \par\smallskip
+  For \(\sin(i)\), we can use the identity
+  \(\sin(z) = \frac{e^{iz} - e^{-iz}}{2i}\).
+  Then
+  \[
+  \sin(i) = \frac{e^{-1} - e^{1}}{2i} = i\frac{e^{1} - e^{-1}}{2} = i\sinh(1).
+  \]
+  Similarly, for \(\cos(i)\), we have
+  \[
+  \cos(i) = \frac{e^{-1} + e^{1}}{2} = \frac{e^{1} + e^{-1}}{2} = \cosh(1).
+  \]
+  For \(\tan(1 + i)\), we can use the identity
+  \(\tan(z) = -i\frac{e^{iz} - e^{-iz}}{e^{iz} + e^{-iz}}\).
+  Then
+  \[
+  \tan(1 + i) = -i\frac{e^{i - 1} - e^{1 - i}}{e^{i - 1} + e^{1 - i}} =
+  -i\tanh(i - 1).
+  \]
+\item
+  The hyperbolic cosine and sine are defined as
+  \(\cosh(z) = \frac{e^z + e^{-z}}{2}\) and
+  \(\sinh(z) = \frac{e^z - e^{-z}}{2}\).
+  Express them through \(\cos(iz)\) and \(\sin(iz)\).
+  Derive the addition formulas, and formulas for \(\cosh(2z)\) and
+  \(\sinh(2z)\).
+  \par\smallskip
+  For the first part, we have
+  \begin{align*}
+    \cos(iz) & = \frac{e^{-z} + e^z}{2}\\
+             & = \cosh(z)\\
+    \sin(iz) & = \frac{e^{-z} - e^z}{2i}\\
+             & = i\frac{e^z - e^{-z}}{2}\\
+             & = i\sinh(z)
+  \end{align*}
+  For \(\cosh\), we have that the addition formula is
+  \begin{align*}
+    \cosh(a + b) & = \cos[i(a + b)]\\
+                 & = \frac{e^{a + b} + e^{-(a + b)}}{2}\\
+                 & = \frac{2e^{a + b} + 2e^{-(a + b)}}{4}\\
+                 & = \bigl(e^{a + b} + e^{a - b} + e^{b - a} + e ^{-(a + b)} +
+                   e^{a + b} - e^{a - b} - e^{b - a} + e^{-(a + b)}\bigr)/4\\
+                 & = \frac{e^a + e^{-a}}{2}\frac{e^b + e^{-b}}{2} +
+                   \frac{e^a - e^{-a}}{2}\frac{e^b - e^{-b}}{2}\\
+                 & = \cosh(a)\cosh(b) + \sinh(a)\sinh(b)
+  \end{align*}
+  For \(\sinh\), we have that the addition formula is
+  \begin{align*}
+    \sinh(a + b) & = -i\sin[i(a + b)]\\
+                 & = \frac{e^{-(a + b)} - e^{a + b}}{-2}\\
+                 & = \frac{2e^{a + b} - 2e^{-(a + b)}}{4}\\
+                 & = \bigl(e^{a + b} + e^{a - b} - e^{b - a} - e ^{-(a + b)} +
+                   e^{a + b} - e^{a - b} + e^{b - a} - e^{-(a + b)}\bigr)/4\\
+                 & = \frac{e^a - e^{-a}}{2}\frac{e^b + e^{-b}}{2} +
+                   \frac{e^a + e^{-a}}{2}\frac{e^b - e^{-b}}{2}\\
+                 & = \sinh(a)\cosh(b) + \cosh(a)\sinh(b)
+  \end{align*}
+  For the double angle formulas, recall that
+  \(\cos(2z) = \cos^2(z) - \sin^2(z) = 2\cos^2(z) - 1 = 1 - 2\sin^2(z)\) and
+  \(\sin(2z) = 2\sin(z)\cos(z)\).
+  Therefore, we have
+  \begin{align*}
+    \cosh(2z) & = \cos(2iz)\\
+              & = \cos^2(iz) - \sin^2(iz)\\
+              & = \Bigl(\frac{e^z + e^{-z}}{2}\Bigr)^2 -
+                \Bigl(\frac{e^z - e^{-z}}{2}\Bigr)^2\\
+              & = \cosh^2(z) - \sinh^2(z)\\
+    \cosh(2z) & = 2\cos^2(iz) - 1\\
+              & = 2\cosh^2(z) - 1\\
+    \cosh(2z) & = 1 - 2\sin^2(iz)\\
+              & = 1 - 2\sinh^2(z)\\
+    \sinh(2z) & = -i\sin(2iz)\\
+              & = -2i\sin(iz)\cos(iz)\\
+              & = 2\frac{e^z - e^{-z}}{2}\frac{e^z + e^{-z}}{2}\\
+              & = 2\sinh(z)\cosh(z)
+  \end{align*}
+\item
+  Use the addition formulas to separate \(\cos(x + iy)\) and \(\sin(x + iy)\)
+  in real and imaginary parts.
+  \begin{align*}
+    \cos(x + iy) & = \cos(x)\cos(iy) - \sin(x)\sin(iy)\\
+                 & = \cos(x)\cosh(y) - i\sin(x)\sinh(y)\\
+    \sin(x + iy) & = \sin(x)\cos(iy) + \sin(iy)\cos(x)\\
+                 & = \sin(x)\cosh(y) + i\sinh(y)\cos(x)
+  \end{align*}
+\item
+  Show that
+  \[
+  \lvert\cos(z)\rvert^2 = \sinh^2(y) + \cos^2(x) = \cosh^2(y) - \sin^2(x) =
+  (\cosh(2y) + \cos(2x))/2
+  \]
+  and
+  \[
+  \lvert\sin(z)\rvert^2 = \sinh^2(y) + \sin^2(x) = \cosh^2(y) - \cos^2(x) =
+  (\cosh(2y) - \cos(2x))/2.
+  \]
+\end{enumerate}
+
+\subsection{Periodicity}
+
+No problem set in Ahlfors.
+
+\subsection{The Logarithm}
+
+\begin{enumerate}
+\item
+  For real \(y\), show that every remainder in the series for \(\cos(y)\) and
+  \(\sin(y)\) has the same sign as the leading term (this generalizes the
+  inequalities used in the periodicity proof).
+\item
+  Prove, for instance, that \(3 < \pi < 2\sqrt{3}\).
+\item
+  Find the value of \(e^z\) for \(z = -i\pi/2,3i\pi/4,2i\pi/3\).
+\item
+  For that values of \(z\) is \(e^z\) equal to \(2,-1,i,-i/2,-1 - i,1 + 2i\)?
+\item
+  Find the real and imaginary parts of \(\exp(e^z)\).
+\item
+  Determine all values of \(2^i,i^i,(-1)^{2i}\).
+\item
+  Determine the real and imaginary parts of \(z^z\).
+\item
+  Express \(\arctan(w)\) in terms of the logarithm.
+\item
+  Show how to define the "angles" in a triangle, bearing in mind that they
+  should lie between \(0\) and \(\pi\).
+  With this definition, prove that the sum of the angles is \(\pi\).
+\item
+  Show that the roots of the binomial equation \(z^n = a\) are the vertices of
+  a regular polygon (equal sides and angles).
 \end{enumerate}
 
 %%% Local Variables:

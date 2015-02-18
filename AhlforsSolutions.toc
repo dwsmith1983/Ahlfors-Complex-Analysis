@@ -20,3 +20,10 @@
 \contentsline {subsection}{\numberline {2.2.1}Sequences}{20}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Series}{20}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Uniform Convergence}{20}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Power Series}{23}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Abel's Limit Theorem}{26}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}The Exponential and Trigonometric Functions}{26}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}The Exponential}{26}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}The Trigonometric Functions}{26}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Periodicity}{28}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}The Logarithm}{28}{subsection.2.3.4}

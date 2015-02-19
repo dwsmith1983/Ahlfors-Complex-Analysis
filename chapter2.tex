@@ -798,9 +798,9 @@ No problem set in Ahlfors.
   \begin{align*}
     \cosh(2z) & = \cos(2iz)\\
               & = \cos^2(iz) - \sin^2(iz)\\
-              & = \Bigl(\frac{e^z + e^{-z}}{2}\Bigr)^2 -
+              & = \Bigl(\frac{e^z + e^{-z}}{2}\Bigr)^2 +
                 \Bigl(\frac{e^z - e^{-z}}{2}\Bigr)^2\\
-              & = \cosh^2(z) - \sinh^2(z)\\
+              & = \cosh^2(z) + \sinh^2(z)\\
     \cosh(2z) & = 2\cos^2(iz) - 1\\
               & = 2\cosh^2(z) - 1\\
     \cosh(2z) & = 1 - 2\sin^2(iz)\\
@@ -830,6 +830,31 @@ No problem set in Ahlfors.
   \lvert\sin(z)\rvert^2 = \sinh^2(y) + \sin^2(x) = \cosh^2(y) - \cos^2(x) =
   (\cosh(2y) - \cos(2x))/2.
   \]
+  For the identities, recall that \(\cosh^2(z) - \sinh^2(z) = 1\) and
+  \(\cos^2(z) + \sin^2(z) = 1\).
+  Then for the first identity, we have
+  \begin{align*}
+    \lvert\cos(z)\rvert^2 & = \cos(z)\cos(\bar{z})\\
+                          & = \bigl[\cos(x)\cosh(y) - i\sin(x)\sinh(y)\bigr]
+                            \bigl[\cos(x)\cosh(y) + i\sin(x)\sinh(y)\bigr]\\
+                          & = \cos^2(x)\cosh^2(y) + \sin^2(x)\sinh^2(y)\\
+                          & = \cos^2(x)(1 + \sinh^2(y)) + \sin^2(x)\sinh^2(y)\\
+                          & = \cos^2(x) + \sinh^2(y)\\
+    \lvert\cos(z)\rvert^2 & = \cos^2(x)\cosh^2(y) + \sin^2(x)(\cosh^2(y) - 1)\\
+                          & = \cosh^2(y) - \sin^2(x)\\
+    \lvert\cos(z)\rvert^2 & = \\
+                          & = (\cosh(2y) + \cos(2x))/2\\
+    \lvert\sin(z)\rvert^2 & = \sin(z)\sin(\bar{z})\\
+                          & = \bigl[\sin(x)\cosh(y) + i\sinh(y)\cos(x)\bigr]
+                            \bigl[\sin(x)\cosh(y) - i\sinh(y)\cos(x)\bigr]\\
+                          & = \sin^2(x)\cosh^2(y) + \sinh^2(y)\cos^2(x)\\
+                          & = \sin^2(x)(1 + \sinh^2(y)) + \sinh^2(y)\cos^2(x)\\
+                          & = \sin^2(x) + \sinh^2(y)\\
+    \lvert\sin(z)\rvert^2 & = \sin^2(x)\cosh^2(y) + (\cosh^2(y) - 1)\cos^2(x)\\
+                          & = \cosh^2(y) - \cos^2(x)\\
+    \lvert\sin(z)\rvert^2 & = \\
+                          & = (\cosh(2y) - \cos(2x))/2
+  \end{align*}
 \end{enumerate}
 
 \subsection{Periodicity}
@@ -843,6 +868,33 @@ No problem set in Ahlfors.
   For real \(y\), show that every remainder in the series for \(\cos(y)\) and
   \(\sin(y)\) has the same sign as the leading term (this generalizes the
   inequalities used in the periodicity proof).
+  \par\smallskip
+  The series for both cosine and sine are
+  \begin{align*}
+    \cos(y) & = \sum_{k = 0}^{\infty}(-1)^k\frac{y^{2k}}{(2k)!}\\
+            & = 1 - \frac{y^2}{2!} + \frac{y^4}{4!} - \cdots\\
+    \sin(y) & = \sum_{k = 0}^{\infty}(-1)^k\frac{y^{2k + 1}}{(2k + 1)!}\\
+            & = y - \frac{y^3}{3!} + \frac{y^6}{6!} - \cdots
+  \end{align*}
+  We can write Taylor's formula as \(f(y) = T_n(y) + R_n(y)\) where
+  \[
+  f(y) = \sum_{k = 0}^n\frac{f^{(k)}(0)}{k!}y^k + \frac{1}{k!}\int_0^y(y - t)^k
+  f^{(k + 1)}(t)dt.
+  \]
+  Now, we can write cosine and sine of \(y\) as
+  \begin{align*}
+    \cos(y) & = \sum_{k = 0}^n\frac{(-1)^ky^{2k}}{(2k)!} + \frac{1}{n!}
+              \int_0^y(y - t)^n\cos^{n + 1}(t)dt\\
+    \sin(y) & = \sum_{k = 0}^{n - 1}\frac{(-1)^ky^{2k + 1}}{(2k + 1)!} +
+              \frac{1}{n!}\int_0^y(y - t)^n\sin^n(t)dt\\
+    \intertext{For cosine and sine, let \(n = 2m\) and \(n = 2m - 1\),
+    respectively.
+    Then}
+    \cos(y) & = \sum_{k = 0}^m\frac{(-1)^ky^{2k}}{(2k)!} + \frac{1}{(2m)!}
+              \int_0^y(y - t)^{2m}\cos^{2m + 1}(t)dt\\
+    \sin(y) & = \sum_{k = 0}^{m - 1}\frac{(-1)^ky^{2k + 1}}{(2k + 1)!} +
+              \frac{1}{(2m - 1)!}\int_0^y(y - t)^{2m - 1}\sin^{2m - 1}(t)dt
+  \end{align*}
 \item
   Prove, for instance, that \(3 < \pi < 2\sqrt{3}\).
 \item

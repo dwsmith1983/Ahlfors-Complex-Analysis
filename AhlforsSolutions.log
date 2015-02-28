@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  18 FEB 2015 23:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  28 FEB 2015 01:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,13 +6,13 @@ entering extended mode
 **\input AhlforsSolutions.tex
 (./AhlforsSolutions.tex
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrbook.cls
-Document Class: scrbook 2015/01/14 v3.15 KOMA-Script document class (book)
+Document Class: scrbook 2015/02/07 v3.16 KOMA-Script document class (book)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2015/01/14 v3.15 KOMA-Script package (KOMA-Script-dependent b
+Package: scrkbase 2015/02/07 v3.16 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2015/01/14 v3.15 KOMA-Script package (KOMA-Script-independent 
+Package: scrbase 2015/02/07 v3.16 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
@@ -20,13 +20,13 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2015/01/14 v3.15 KOMA-Script package (loading files)
+Package: scrlfile 2015/02/07 v3.16 KOMA-Script package (loading files)
 
-Package scrlfile, 2015/01/14 v3.15 KOMA-Script package (loading files)
+Package scrlfile, 2015/02/07 v3.16 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 ))) (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2015/01/14 v3.15 KOMA-Script package (handling toc-files)
+Package: tocbasic 2015/02/07 v3.16 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
@@ -38,19 +38,19 @@ Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 120.
 Package tocbasic Info: defining new hook before heading of `' on input line 117
-4.
+5.
 Class scrbook Info: File `scrsize11pt.clo' used instead of
-(scrbook)           file `scrsize11.clo' to setup font sizes on input line 1711
+(scrbook)           file `scrsize11.clo' to setup font sizes on input line 1712
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2015/01/14 v3.15 KOMA-Script font size class option (11pt
+File: scrsize11pt.clo 2015/02/07 v3.16 KOMA-Script font size class option (11pt
 )
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2015/01/14 v3.15 KOMA-Script package (type area)
+Package: typearea 2015/02/07 v3.16 KOMA-Script package (type area)
 
-Package typearea, 2015/01/14 v3.15 KOMA-Script package (type area)
+Package typearea, 2015/02/07 v3.16 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -76,7 +76,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1341.
+(typearea)              on input line 1342.
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -629,6 +629,12 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/x11nam.def
+File: x11nam.def 2007/01/21 v2.11 Predefined colors according to Unix/X11 (UK)
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -1107,6 +1113,7 @@ LaTeX Info: Redefining \nameref on input line 9.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\GPT@outputbox=\box37
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1123,7 +1130,7 @@ File: se-pdfdoc.def 2011/12/02 v1.10 stringenc: PDFDocEncoding
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 24.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 25.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -1131,7 +1138,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package tocbasic Info: character protrusion at toc deactivated on input line 24
+Package tocbasic Info: character protrusion at toc deactivated on input line 25
 .
 
 (./AhlforsSolutions.toc
@@ -1235,13 +1242,13 @@ LaTeX Font Info:    Try loading font information for U+fplmbb on input line 322
 .
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [9] [10] [11] [12] <Tikz/1-2prob3a.pdf, id=280, 57.80095pt x 57.29706pt>
+) [9] [10] [11] [12] <Tikz/1-2prob3a.pdf, id=301, 57.80095pt x 57.29706pt>
 File: Tikz/1-2prob3a.pdf Graphic file (type pdf)
 
 <use Tikz/1-2prob3a.pdf>
 Package pdftex.def Info: Tikz/1-2prob3a.pdf used on input line 643.
 (pdftex.def)             Requested size: 144.54pt x 143.28947pt.
- <Tikz/1-2prob3b.pdf, id=281, 58.32791pt x 57.29706pt>
+ <Tikz/1-2prob3b.pdf, id=302, 58.32791pt x 57.29706pt>
 File: Tikz/1-2prob3b.pdf Graphic file (type pdf)
 
 <use Tikz/1-2prob3b.pdf>
@@ -1253,26 +1260,31 @@ Package pdftex.def Info: Tikz/1-2prob3b.pdf used on input line 672.
 
 ]
 Chapter 2.
-[17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
- [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
+[17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29])
+(./chapter3.tex [30]
+Chapter 3.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
+ [31
 
-(./AhlforsSolutions.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
+ (./AhlforsSolutions.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
 Package rerunfilecheck Info: File `AhlforsSolutions.out' has not changed.
-(rerunfilecheck)             Checksum: 14446E04132148050CBFE7A1CAA3BD2B;2256.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
+(rerunfilecheck)             Checksum: 47F44C936F3E585ACF1A128BAA152E9F;2563.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
  ) 
 Here is how much of TeX's memory you used:
- 20445 strings out of 493109
- 318104 string characters out of 6135010
- 504345 words of memory out of 5000000
- 23277 multiletter control sequences out of 15000+600000
- 46847 words of font info for 163 fonts, out of 8000000 for 9000
+ 20950 strings out of 493109
+ 326307 string characters out of 6135010
+ 531921 words of memory out of 5000000
+ 23739 multiletter control sequences out of 15000+600000
+ 47800 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,18n,118p,390b,2130s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,18n,118p,390b,2133s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
@@ -1294,10 +1306,10 @@ live/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on AhlforsSolutions.pdf (29 pages, 279606 bytes).
+Output written on AhlforsSolutions.pdf (31 pages, 292050 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 495 compressed objects within 5 object streams
- 186 named destinations out of 1000 (max. 500000)
- 23795 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 599 PDF objects out of 1000 (max. 8388607)
+ 539 compressed objects within 6 object streams
+ 202 named destinations out of 1000 (max. 500000)
+ 23827 words of extra memory for PDF output out of 24883 (max. 10000000)
 

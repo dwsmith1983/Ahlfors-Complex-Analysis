@@ -89,6 +89,10 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/graphics/dvipsnam.def
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/svgnam.def
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/svgnam.def
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/x11nam.def
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/x11nam.def
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -355,6 +359,8 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT chapter3.tex
+INPUT chapter3.tex
 INPUT AhlforsSolutions.aux
 INPUT ./AhlforsSolutions.out
 INPUT ./AhlforsSolutions.out

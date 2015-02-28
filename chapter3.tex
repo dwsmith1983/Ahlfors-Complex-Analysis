@@ -1,0 +1,79 @@
+\chapter{Analytic Functions as Mappings}
+
+\section{Elementary Point Set Topology}
+
+\subsection{Sets and Elements}
+
+\subsection{Metric Spaces}
+
+\begin{enumerate}[ref = \theenumi{}]
+\item
+  \label{3.1.2.1}
+  If \(S\) is a metric space with distance function \(d(x,y)\), show that \(S\)
+  with the distance function \(\delta(x,y) = d(x,y)/[1 + d(x,y)]\) is also a
+  metric space.
+  The latter space is bounded in the sense that all distances lie under a fixed
+  bound.
+  \par\smallskip
+  Since \(d(x,y)\) is a metric on \(S\), \(d(x,y)\) satifies
+  \begin{subequations}
+    \begin{align}
+      d(x, y) & \geq 0,\text{  and zero only when \(x = y\)}\label{3.1.2.1a}\\
+      d(x, y) & = d(y, x)\label{3.1.2.1b}\\
+      d(x, z) & \leq d(x, y) + d(y, z)\label{3.1.2.1c}
+    \end{align}
+  \end{subequations}
+  By \cref{3.1.2.1a}, for \(x = y\), \(d(x,y) = 0\) so
+  \(\delta(x,y) = 0/1 = 0\), and when \(x\neq y\), \(d(x,y) > 0\) so
+  \(\delta(x,y) > 0\) since a positive number divided by a positive number is
+  positive.
+  We have that \(\delta(x,y)\geq 0\) and equal zero if and only if \(x = y\).
+  By \cref{3.1.2.1b}, we have
+  \begin{align*}
+    \delta(x, y) & = \frac{d(x, y)}{1 + d(x, y)}\\
+                 & = \frac{d(y, x)}{1 + d(y, x)}\\
+                 & = \delta(y, x)
+  \end{align*}
+  For the triangle inequality, we have
+  \begin{align*}
+    \frac{d(x, z)}{1 + d(x, z)}
+    & \leq \frac{d(x, y)}{1 + d(x, y)} + \frac{d(y, z)}{1 + d(y, z)}\\
+    \intertext{Let's multiple through by the product of all three
+    denominators.
+    After simplifying, we obtain}
+    d(x, z) & \leq d(x, y) + d(y,z) + 2d(x, y)d(y, z) + d(x, y)d(y, z)d(x, z)
+  \end{align*}
+  We have already shown that \(d(x,y)\geq 0\) and zero if and only if
+  \(x = y\).
+  If \(x = y = z\), the triangle inequality is vacuously true.
+  When \(x\neq y\neq z\), the triangle inequality follows since each distance
+  is positive and \cref{3.1.2.1c}; that is,
+  \[
+  \delta(x, z)\leq \delta(x, y) + \delta(y, z).
+  \]
+\item
+  Suppose that there are given two distance functions \(d(x,y)\) and
+  \(d_1(x,y)\) on the same space \(S\).
+  They are said to be equivalent if they determine the same open sets.
+  Show that \(d\) and \(d_1\) are equivalent if to every \(\epsilon > 0\) there
+  exists a \(\delta > 0\) such that \(d(x,y) < \delta\) implies
+  \(d_1(x,y) < \epsilon\), and vice versa.
+  Verify that this condition is fulfilled in \cref{3.1.2.1}.
+\item
+  Show by strict application of the definition that the closure of
+  \(\lvert z - z_0\rvert < \delta\) is \(\lvert z - z_0\rvert\leq\delta\).
+\item
+  If \(X\) is the set of complex numbers whose real and imaginary parts are
+  rational, what is \(\operatorname{Int} X, \bar{X}, \partial X\)?
+\item
+  It is sometimes typographically simpler to write \(X'\) for \(\sim X\).
+  With this notation, how is \(X^{'-'}\) related to \(X\)?
+  Show that \(X^{-'-'-'-'} = X^{-'-'}\).
+\item
+  A set is said to be discrete if all its points are isolated.
+  Show that a discrete set in \(\mathbb{R}\) or \(\mathbb{C}\) is countable.
+\end{enumerate}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

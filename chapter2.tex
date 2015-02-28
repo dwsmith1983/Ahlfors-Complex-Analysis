@@ -3,7 +3,6 @@
 \section{Introduction to the Concept of Analytical Function}
 
 \subsection{Limits and Continuity}
-No problem set in Ahlfors.
 
 \subsection{Analytic Functions}
 
@@ -226,8 +225,6 @@ No problem set in Ahlfors.
 
 \subsection{Polynomials}
 
-No problem set in Ahlfors.
-
 \subsection{Rational Functions}
 
 \begin{enumerate}
@@ -282,11 +279,7 @@ No problem set in Ahlfors.
 
 \subsection{Sequences}
 
-No problem sets in Ahlfors.
-
 \subsection{Series}
-
-No problem sets in Ahlfors.
 
 \subsection{Uniform Convergence}
 
@@ -722,13 +715,9 @@ No problem sets in Ahlfors.
 
 \subsection{Abel's Limit Theorem}
 
-No problem set in Ahlfors.
-
 \section{The Exponential and Trigonometric Functions}
 
 \subsection{The Exponential}
-
-No problem set in Ahlfors.
 
 \subsection{The Trigonometric Functions}
 
@@ -859,8 +848,6 @@ No problem set in Ahlfors.
 
 \subsection{Periodicity}
 
-No problem set in Ahlfors.
-
 \subsection{The Logarithm}
 
 \begin{enumerate}
@@ -899,16 +886,109 @@ No problem set in Ahlfors.
   Prove, for instance, that \(3 < \pi < 2\sqrt{3}\).
 \item
   Find the value of \(e^z\) for \(z = -i\pi/2,3i\pi/4,2i\pi/3\).
+  \begin{align*}
+    e^{-i\pi/2} & = -i\\
+    e^{3i\pi/4} & = (-\sqrt{2} + i\sqrt{2})/2\\
+    e^{2i\pi/3} & = (-1 + i\sqrt{3})/2
+  \end{align*}
 \item
   For that values of \(z\) is \(e^z\) equal to \(2,-1,i,-i/2,-1 - i,1 + 2i\)?
+  \par\smallskip
+  For all problems, \(k\in\mathbb{Z}\).
+  \begin{alignat*}{4}
+    e^z & = 2 & \qquad & e^z && ={} -1\\
+    z & = \log(2) + 2ki\pi & & z && ={} \log(-1)\\
+    e^z & = i & & && ={}\log\lvert i\rvert + i(\arg(-1) + 2k\pi)\\
+    z & = \log\lvert i\rvert + i(\arg(i) + 2k\pi) & & && = {} i\pi(1 + 2k\pi)\\
+    & = \frac{i\pi}{2}(1 + 4k) & & e^z && = \frac{-i}{2}\\
+    e^z & = -1 - i & & && = -\log(2) - \frac{i\pi}{2}(1 + 4k)\\
+    z & = \log\lvert -1 - i\rvert + i(\arg(-1 - i) + 2k\pi) & &
+    e^z && ={} 1 + 2i\\
+    & = \log(\sqrt{2}) - \frac{3i\pi}{4} + 2ki\pi & & z
+    && ={} \log(\sqrt{5}) + i(\arctan(2) + 2k\pi)\\
+    & = \frac{\log(2)}{2} - \frac{3i\pi}{4} + 2ki\pi & &
+    && ={} \frac{\log(5)}{2} + i(\arctan(2) + 2k\pi)
+  \end{alignat*}
 \item
   Find the real and imaginary parts of \(\exp(e^z)\).
+  \par\smallskip
+  Let \(z = x + iy\).
+  Then
+  \begin{align*}
+    \exp(e^z) & = \exp\bigl[e^x(\cos(y) + i\sin(y)\bigr]\\
+              & = \exp(e^x\cos(y))\exp(ie^x\sin(y))\\
+              & = \exp(e^x\cos(y))
+                \bigl[\cos(e^x\sin(y)) + i\sin(e^x\sin(y))\bigr]\\
+    u(x, y) & = \exp(e^x\cos(y))\cos(e^x\sin(y))\\
+    v(x, y) & = \exp(e^x\cos(y))\sin(e^x\sin(y))
+  \end{align*}
+  where \(u(x,y)\) is the real and \(v(x,y)\) is the imaginary part of
+  \(\exp(e^z)\).
 \item
   Determine all values of \(2^i,i^i,(-1)^{2i}\).
+  \par\smallskip
+  For all problems, \(k\in\mathbb{Z}\).
+  \begin{align*}
+    z & = 2^i\\
+      & = \exp\bigl[i\log(2)\bigr]\\
+      & = \cos(\log(2)) + i\sin(\log(2))\\
+    z & = i^i\\
+      & = \exp\bigl[i\log(i)\bigr]\\
+      & = \exp[-\pi(1 + 4k)/2]\\
+    z & = (-1)^{2i}\\
+      & = i^{4i}\\
+      & = (i^i)^4\\
+      & = \exp[-2\pi(1 + 4k)]
+  \end{align*}
 \item
   Determine the real and imaginary parts of \(z^z\).
+  \par\smallskip
+  Let \(z = x + iy\) and \(k\in\mathbb{Z}\).
+  \begin{align*}
+    z^z & = (x + iy)^{x + iy}\\
+        & = \exp\bigl[(x + iy)\log(x + iy)\bigr]\\
+        & = e^{x/2\log(x^2 + y^2) - y(\arctan(y/x) + 2k\pi)}
+          \begin{aligned}
+            &
+            \Bigl[\cos\bigl(x(\arctan(y/x) + 2k\pi) + y/2\log(x^2 + y^2)\bigr)
+            +\\
+            &
+            i\sin\bigl(x(\arctan(y/x) + 2k\pi) + y/2\log(x^2 + y^2)\bigr)\Bigr]
+          \end{aligned}
+  \end{align*}
+  Thus, the real part is
+  \[
+  u(x, y) = e^{x/2\log(x^2 + y^2) - y(\arctan(y/x) + 2k\pi)}
+  \cos\bigl(x(\arctan(y/x) + 2k\pi) + y/2\log(x^2 + y^2)\bigr)
+  \]
+  and the imaginary part is
+  \[
+  v(x, y) = e^{x/2\log(x^2 + y^2) - y(\arctan(y/x) + 2k\pi)}
+  \sin\bigl(x(\arctan(y/x) + 2k\pi) + y/2\log(x^2 + y^2)\bigr)
+  \]
 \item
   Express \(\arctan(w)\) in terms of the logarithm.
+  \par\smallskip
+  Let \(\arctan(w) = z\).
+  Then \(w = \tan(z)\).
+  Recall that \(\tan(z) = -i\frac{e^{iz} - e^{-iz}}{e^{iz} + e^{-iz}}\).
+  Now, let \(e^{2iz} = x\).
+  Then we have the following
+  \[
+  w = -i\frac{x^2 - 1}{x^2 + 1}
+  \]
+  which leads to
+  \[
+  e^{2iz} = \frac{i - w}{i + w}.
+  \]
+  By taking the \(\log\), we can recover \(z\).
+  \begin{align*}
+    2iz & = \log(i - w) - \log(i + w)\\
+        & = \log(i) + \log(1 + iw) - \log(i) - \log(1 - iw)\\
+    z & = \frac{i}{2}\bigl[\log(1 - iw) - \log(1 + iw)\bigr]\\
+    \arctan(w) & = z\\
+        & = \frac{i}{2}\bigl[\log(1 - iw) - \log(1 + iw)\bigr]
+  \end{align*}
 \item
   Show how to define the "angles" in a triangle, bearing in mind that they
   should lie between \(0\) and \(\pi\).

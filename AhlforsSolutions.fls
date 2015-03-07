@@ -352,6 +352,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT chapter2.tex
 INPUT chapter2.tex
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9d.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/eulervm/zeuex10.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/euler/euex10.tfm

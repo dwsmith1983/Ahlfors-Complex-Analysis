@@ -496,16 +496,15 @@
                     & = 2\lvert a\rvert
   \end{align*}
   Thus, \(\lvert c\rvert\geq\lvert a\rvert\).
-  If \(\lvert a\rvert\leq\lvert c\rvert\), then let
-  \(z = \lvert c\rvert\frac{a}{\lvert a\rvert}\).
+  For the second implication, if \(a = 0\), the result follow.
+  Suppose \(a\neq 0\).
+  Then let \(z = \lvert c\rvert\frac{a}{\lvert a\rvert}\).
   \begin{align*}
-    \lvert z - a\rvert + \lvert z + a\rvert
-    & \geq \lvert (z - a) + (z + a)\rvert\\
-    & = 2\lvert\lvert c\rvert\rvert\\
-    \intertext{since \(\frac{a}{\lvert a\rvert}\) is a unit vector.}
-    & = 2\lvert c\rvert
+    2\lvert c\rvert & = \lvert a\rvert(\lvert c\rvert/\lvert a\rvert - 1) +
+                      \lvert a\rvert(\lvert c\rvert/\lvert a\rvert + 1)\\
+                    & = \lvert z - a\rvert + \lvert z + a\rvert
   \end{align*}
-  Thus, \(2\lvert c\rvert\geq 2\lvert c\rvert\) which is equality.
+  The smallest and largest values of \(z\) can be found below.
   \begin{align*}
     2\lvert c\rvert & = \lvert z + a\rvert + \lvert z - a\rvert\\
     4\lvert c\rvert^2 & =
@@ -791,6 +790,19 @@
 \item
   Find the radius of the spherical image of the circle in the plane whose
   center is \(a\) and radius \(R\).
+  \par\smallskip
+  Let \(z = a + R\) and \(z' = a - R\).
+  Then the distance \(d(z,z') = 2R\).
+  \begin{align*}
+    2R & = d(z,z')\\
+    R & = d(z,z')/2\\
+       & = \frac{2\lvert R\rvert}
+         {\sqrt{(1 + \lvert a\rvert^2 + \lvert R\rvert^2 + 2\Re\{a\bar{R}\})
+         (1 + \lvert a\rvert^2 + \lvert R\rvert^2 - 2\Re\{a\bar{R}\})}}\\
+       & = \frac{2\lvert R\rvert}
+         {\sqrt{(1 + \lvert a\rvert^2 + \lvert R\rvert^2)^2 -
+         4\Re^2\{a\bar{R}\}}}
+  \end{align*}
 \end{enumerate}
 
 %%% Local Variables:

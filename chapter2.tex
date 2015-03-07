@@ -9,7 +9,78 @@
 \begin{enumerate}
 \item
   If \(g(w)\) and \(f(z)\) are analytic functions, show that \(g(f(z))\) is
-  also analytic.  
+  also analytic.
+  \par\smallskip
+  Let \(g(w) = h(x,y) + it(x,y)\) and \(f(z) = u(x,y) + iv(x,y)\) where
+  \(z = w = x + iy\) for \(x,y\in\mathbb{R}\).
+  Then
+  \[
+  (g\circ f)(z) = h(u(x, y), v(x, y)) + it(u(x, y), v(x, y)).
+  \]
+  Since \(f\) and \(g\) satisfy the Cauchy-Riemann equations,
+  \begin{alignat*}{4}
+    \frac{\partial u}{\partial x} & = \frac{\partial v}{\partial y} & \qquad &
+    \frac{\partial u}{\partial y} && ={} -\frac{\partial v}{\partial x}\\
+    \frac{\partial h}{\partial x} & = \frac{\partial t}{\partial y} & \qquad &
+    \frac{\partial h}{\partial u} && ={} -\frac{\partial t}{\partial x}
+  \end{alignat*}
+  The partial deivatives of \((g\circ f)(z)\) are
+  \begin{alignat*}{4}
+    \frac{\partial h}{\partial x}
+    & = \frac{\partial h}{\partial u}\frac{\partial u}{\partial x} +
+    \frac{\partial t}{\partial v}\frac{\partial v}{\partial x} & \qquad &
+    \frac{\partial t}{\partial y}
+    && ={} \frac{\partial t}{\partial u}\frac{\partial u}{\partial y} +
+    \frac{\partial t}{\partial v}\frac{\partial v}{\partial y}\\
+    \frac{\partial h}{\partial y}
+    & = \frac{\partial h}{\partial u}\frac{\partial u}{\partial y} +
+    \frac{\partial t}{\partial v}\frac{\partial v}{\partial y} & \qquad &
+    \frac{\partial t}{\partial x}
+    && ={} \frac{\partial t}{\partial u}\frac{\partial u}{\partial x} +
+    \frac{\partial t}{\partial v}\frac{\partial v}{\partial x}
+  \end{alignat*}
+  In order for \(g(f(z))\) to be analytic,
+  \(\frac{\partial h}{\partial x} = \frac{\partial t}{\partial y}\) and
+  \(\frac{\partial h}{\partial y} = -\frac{\partial t}{\partial x}\).
+  We can then write
+  \begin{align*}
+    \frac{\partial h}{\partial x} - \frac{\partial t}{\partial y}
+    & = \frac{\partial h}{\partial u}\frac{\partial u}{\partial x} +
+      \frac{\partial h}{\partial v}\frac{\partial v}{\partial x} -
+      \frac{\partial t}{\partial u}\frac{\partial u}{\partial y} -
+      \frac{\partial t}{\partial v}\frac{\partial v}{\partial y}\\
+    & = \underbrace{\frac{\partial h}{\partial u}\frac{\partial u}{\partial x}
+      - \frac{\partial t}{\partial u}\frac{\partial u}{\partial y}}_{
+      \text{term } 1} +
+      \underbrace{\frac{\partial h}{\partial v}\frac{\partial v}{\partial x} -
+      \frac{\partial t}{\partial v}\frac{\partial v}{\partial y}}_{\text{term }
+      2}\eqnumtag\label{2.1.2.1crx}\\
+    \intertext{In order for the right hand side of \cref{2.1.2.1crx} to be
+    zero, we need both terms to be zero.}
+    \frac{\partial h}{\partial u}\frac{\partial u}{\partial x} -
+    \frac{\partial t}{\partial u}\frac{\partial u}{\partial y}
+    & = \frac{\partial h}{\partial u}\frac{\partial u}{\partial x} -
+      \frac{\partial t}{\partial y}\frac{\partial u}{\partial u}\\
+    & = \frac{\partial h}{\partial u}\frac{\partial u}{\partial x} -
+      \frac{\partial h}{\partial u}\frac{\partial u}{\partial x}\eqnumtag
+      \label{2.1.2.1ux}\\
+    \intertext{\Cref{2.1.2.1ux} occurs since \(g\) is analytic and satisfies
+    the Cauchy-Riemann equations.}
+    & = 0\\
+    \intertext{For the second term in \cref{2.1.2.1crx}, we again use the
+    analyticity of \(g\).}
+    \frac{\partial h}{\partial v}\frac{\partial v}{\partial x} -
+    \frac{\partial t}{\partial v}\frac{\partial v}{\partial y}
+    & = \frac{\partial h}{\partial v}\frac{\partial v}{\partial x} -
+      \frac{\partial h}{\partial v}\frac{\partial v}{\partial x}\\
+    & = 0\\
+    \intertext{Therefore, from \cref{2.1.2.1crx}, we have}
+    \frac{\partial h}{\partial x} - \frac{\partial t}{\partial y} & = 0\\
+    \frac{\partial h}{\partial x} & = \frac{\partial t}{\partial y}
+  \end{align*}
+  By similar analysis, we are able to conclude that
+  \(\frac{\partial h}{\partial y} = -\frac{\partial t}{\partial x}\).
+  Therefore, \(g(f(z))\) satisfies the Cauchy-Riemann so it is analytic.
 \item
   Verify Cauchy-Riemann's equations for the function \(z^2\) and \(z^3\).
   \par\smallskip
@@ -84,23 +155,43 @@
   That is, \(u_x = v_y\) and \(u_y = -v_x\).
   \begin{subequations}
     \begin{align}
-      uv_y + vv_x & = 0\label{2.1.2.4a}\\
-      -uv_x + vv_y & = 0\label{2.1.2.4b}
+      uu_x - vu_y & = 0\label{2.1.2.4a}\\
+      uu_y + vu_x & = 0\label{2.1.2.4b}
     \end{align}
   \end{subequations}
-  Setting \cref{2.1.2.4a} equal to \cref{2.1.2.4b}, we have
+  Let's write \cref{2.1.2.4a,2.1.2.4b} in matrix form.
+  Then we have
   \[
-  v_x(u + v) + v_y(u - v) = 0.
+  \begin{bmatrix}
+    u & -v\\
+    v & u
+  \end{bmatrix}
+  \begin{bmatrix}
+    \frac{\partial u}{\partial x}\\
+    \frac{\partial u}{\partial x}
+  \end{bmatrix} =
+  \begin{bmatrix}
+    0\\
+    0
+  \end{bmatrix}
   \]
-  Now, either \(v_x\) and \(v_y\) are zero, \(v_x\) and \(u - v\) are zero,
-  \(v_y\) and \(u + v\) are zero, or \(u + v\) and \(u - v\) are zero.
-  If \(v_x = v_y = 0\), then \(f\) is constant.
-  If \(v_x = 0\) and \(u - v = 0\), then \(u_y = 0\) and \(u = v\).
-  Since \(u = v\) and \(v_x = 0\), then so does \(u_x = 0\) and it also follows
-  that \(v_y = 0\); thus, \(f\) is a constant.
-  By the same argument, \(f\) is a constant when \(v_y = 0\) and \(u + v = 0\).
-  If \(u + v = 0\) and \(u - v = 0\), then \(u = \pm v\) so \(u = v = 0\) and
-  \(f\) is a constant.
+  Suppose the matrix is not invertible.
+  Then \(u^2 + v^2 = 0\).
+  Since \(u^2,v^2\in\mathbb{R}\), \(u^2,v^2\geq 0\).
+  Therefore, \(u = v = 0\) so \(f(z) = 0\).
+  Now, suppose that the matrix is invertible.
+  Then we have
+  \[
+  \begin{bmatrix}
+    \frac{\partial u}{\partial x}\\
+    \frac{\partial u}{\partial x}
+  \end{bmatrix} =
+  \begin{bmatrix}
+    0\\
+    0
+  \end{bmatrix}
+  \]
+  so \(f'(z) = 0\) and \(f(z) = c\) for some constant \(c\).
 \item
   Prove rigorously that the functions \(f(z)\) and \(\overline{f(\bar{z})}\)
   are simultaneously analytic.
@@ -235,30 +326,47 @@
   \]
   in partial fractions.
   \par\smallskip
-  Let \(R(z) = \frac{z^4}{z^3 - 1}\).
-  Then we need to find \(G(z)\) and \(H(z)\) such that \(G(z) + H(z) = R(z)\).
-  \(G(z)\) is the singular part of \(R(z)\) and the degree of \(G(z)\) is order
-  of the pole at infinity.
-  Dividing \(z^4\) by \(z^3 - 1\), we get
+  Let \(R(z) = \frac{z^4}{z^3 - 1} = z + \frac{z}{z^3 - 1}\).
+  The poles of \(R(z)\) occur when \(z^3 = 1\).
+  Then the distinct poles are \(z = 1,e^{2i\pi/3},e^{4i\pi/3}\).
+  Let \(H(z) = \frac{z}{z^3 - 1}\), \(z\mapsto\beta_i + 1/w\), and
+  \(\beta_i\in\{1,e^{2i\pi/3},e^{4i\pi/3}\}\).
+  \begin{align*}
+    H(1 + 1/w) & = \frac{w}{3} - \frac{w}{3(3w^2 + 3w + 1)}\\
+    H(e^{2i\pi/3} + 1/w)
+               & = \frac{w}{3e^{2i\pi/3}} - \frac{w}{3e^{2i\pi/3}
+                 (3e^{2i\pi/3}w^2 + 3e^{4i\pi/3}w + 1)}\\
+    H(e^{4i\pi/3} + 1/w)
+               & = \frac{w}{3e^{4i\pi/3}} - \frac{w}{3e^{4i\pi/3}
+                 (3e^{4i\pi/3}w^2 + 3e^{2i\pi/3}w + 1)}\\
+    H(\beta_i + 1/w) & = \frac{w}{3\beta_i} - Q(w)
+  \end{align*}
+  Then \(G_i(w) = \frac{w}{3\beta_i}\) where \(w\mapsto 1/(z - \beta_i)\).
+  Now, \(R(z) = G(z) + G_i[1/(z - \beta_i)]\) so we finally have that
   \[
-  R(z) = z + \frac{z}{z^3 - 1}
+  R(z) = \frac{z^4}{z^3 - 1} = z + \frac{z}{z^3 - 1} =
+  z + \sum_{i = 1}^3\frac{1}{3\beta_i(z - \beta_i)}.
   \]
-  so \(G(z) = z\) and \(H(z) = \frac{z}{z^3 - 1}\).
-  The order of the pole at infinity is one.
-\item
-  If \(Q\) is a polynomial with distinct roots \(\alpha_1,\ldots,\alpha_n\),
-  and if \(P\) is a polynomial of degree \(< n\), show that
+  The second problem's numerator already is of a degree less than the
+  denominator so we can proceed at once.
+  Let \(R(z) = \frac{1}{z(z + 1)^2(z + 2)^3}\).
+  The poles of \(R(z)\) are \(\beta_i\in\{0,-1,-2\}\) and
+  \(z\mapsto \beta_i + 1/w\).
+  \begin{align*}
+    R(1/w) & = \frac{w}{(1/w + 1)^2(1/w + 2)^3}\\
+           & = \frac{w^6}{(w + 1)^2(2w + 1)^3}\\
+           & = \frac{w}{8} + Q(w)\\
+    R(1/w - 1) & = \frac{w^6}{(1 - w)(w + 1)^3}\\
+           & = 2w - w^2 + Q(w)\\
+    R(1/w - 2) & = \frac{w^6}{(1 - 2w)(w - 1)^2}\\
+           & = -\frac{17w}{8} - \frac{5w^2}{4} - \frac{w^3}{2} + Q(w)
+  \end{align*}
+  Therefore, we can write
   \[
-  \frac{P(z)}{Q(z)} = \sum_{k = 1}^n
-  \frac{P(\alpha_k)}{Q'(\alpha_k)(z - \alpha_k)}.
+  R(z) = \frac{1}{z(z + 1)^2(z + 2)^3} = \frac{1}{8z} + \frac{2}{z + 1} -
+  \frac{1}{(z + 1)^2} - \frac{17}{8(z + 2)} - \frac{5}{4(z + 2)^2} -
+  \frac{1}{2(z + 2)^3}
   \]
-  Let's multiple by \(Q(z)\).
-  We then have
-  \[
-  P(z) = \sum_{k = 1}^n\frac{P(\alpha_k)}{Q'(\alpha_k)(z - \alpha_k)}Q(z)
-  \]
-  which are both polynomials of degree less than \(n\) and agreeing at
-  \(z = \alpha_k\).
 \item
   Use the formula in the preceding exercise to prove that there exists a
   unique polynomial \(P\) or degree \(< n\) with given values \(c_k\) at the

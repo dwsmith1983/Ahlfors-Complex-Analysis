@@ -6,7 +6,7 @@
 
 \subsection{Metric Spaces}
 
-\begin{enumerate}[ref = \theenumi{}]
+\begin{exercise}[ref = \arabic{exercisei}]
 \item
   \label{3.1.2.1}
   If \(S\) is a metric space with distance function \(d(x,y)\), show that \(S\)
@@ -59,6 +59,37 @@
   exists a \(\delta > 0\) such that \(d(x,y) < \delta\) implies
   \(d_1(x,y) < \epsilon\), and vice versa.
   Verify that this condition is fulfilled in \cref{3.1.2.1}.
+  \par\smallskip
+  Let \(\epsilon,\delta > 0\) be given.
+  We can write
+  \(\delta(x,y) = \frac{d(x,y)}{1 + d(x,y)} = 1 - \frac{1}{1 + d(x,y)}\).
+  We need to find a \(\delta\) such that whenver \(d(x,y) < \delta\),
+  \(\delta(x,y) < \epsilon\).
+  \begin{align*}
+    1 - \frac{1}{1 + d(x, y)} & < \epsilon\\
+    d(x, y) & < \frac{\epsilon}{1 - \epsilon}
+  \end{align*}
+  Let \(\delta = \frac{\epsilon}{1 - \epsilon}\).
+  For \(\epsilon < 1\), if \(d(x,y) < \delta = \frac{\epsilon}{1 - \epsilon}\),
+  then
+  \[
+  \delta(x,y) = 1 - \frac{1}{1 + d(x, y)} < 1 -
+  \frac{1}{1 + \frac{\epsilon}{1 - \epsilon}} = \epsilon.
+  \]
+  If \(\epsilon > 1\),
+  \(\delta(x,y) = \frac{d(x,y)}{1 + d(x,y)} < 1 < \epsilon\).
+  For the reverse implication, we need to find a \(\delta\) such that
+  \(d(x,y) < \epsilon\).
+  Let \(\delta = \frac{\epsilon}{1 + \epsilon}\).
+  For any \(\epsilon > 0\), if
+  \(\delta(x,y) < \delta = \frac{\epsilon}{1 + \epsilon}\), then
+  \begin{align*}
+    \frac{d(x, y)}{1 + d(x, y)} & < \frac{\epsilon}{1 + \epsilon}\\
+    d(x, y)(1 + \epsilon) & < \epsilon + \epsilon d(x, y)\\
+    d(x, y) & < \epsilon
+  \end{align*}
+  as was needed to be shown.
+  Therefore, \(d(x,y)\) and \(\delta(x,y)\) are equivalent metrics on \(S\).
 \item
   Show by strict application of the definition that the closure of
   \(\lvert z - z_0\rvert < \delta\) is \(\lvert z - z_0\rvert\leq\delta\).
@@ -72,7 +103,7 @@
 \item
   A set is said to be discrete if all its points are isolated.
   Show that a discrete set in \(\mathbb{R}\) or \(\mathbb{C}\) is countable.
-\end{enumerate}
+\end{exercise}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t

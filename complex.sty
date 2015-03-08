@@ -63,3 +63,11 @@
   \tag{\theequation}%
 }
 %
+% Rename enumerate from item to exercise
+\newlist{exercise}{enumerate}{75}
+\setlist[exercise]{label*=\arabic*.}
+% adjust cref for label names
+\crefname{exercisei}{exercise}{exercise}
+\Crefname{exercisei}{Exercise}{exercise}
+\crefname{exerciseii}{exercise}{exercise}
+\Crefname{exerciseii}{Exercise}{exercise}

@@ -6,7 +6,7 @@
 
 \subsection{Analytic Functions}
 
-\begin{enumerate}
+\begin{exercise}
 \item
   If \(g(w)\) and \(f(z)\) are analytic functions, show that \(g(f(z))\) is
   also analytic.
@@ -312,13 +312,13 @@
   Schwarz's theorem states that if \(f\) is a function of two variables such
   that \(f_{xy}\) and \(f_{yx}\) both exist and are continuous at some point
   \((x_0,y_0)\), then \(f_{xy} = f_{yx}\).
-\end{enumerate}
+\end{exercise}
 
 \subsection{Polynomials}
 
 \subsection{Rational Functions}
 
-\begin{enumerate}
+\begin{exercise}
 \item
   Use the method of the text to develop
   \[
@@ -369,7 +369,7 @@
   \]
 \item
   Use the formula in the preceding exercise to prove that there exists a
-  unique polynomial \(P\) or degree \(< n\) with given values \(c_k\) at the
+  unique polynomial \(P\) of degree \(< n\) with given values \(c_k\) at the
   points \(\alpha_k\) (Lagrange's interpolation polynomial).
 \item
   What is the general form of a rational function which has absolute value
@@ -381,7 +381,47 @@
 \item
   If \(R(z)\) is a rational function of order \(n\), how large and how small
   can the order of \(R'(z)\) be?
-\end{enumerate}
+  \par\smallskip
+  Let \(R(z) = P(z)/Q(z)\) where \(P(z)\) has degree \(n\) and \(Q(z)\) has
+  degree \(m\).
+  Let \(k\) be the degree of \(R(z)\).
+  Then \(k = \max\{n,m\}\).
+  \[
+  R'(z) = \frac{P'(z)Q(z) - P(z)Q'(z)}{Q(z)^2}
+  \]
+  Then we have four cases
+  \begin{exercise}[label = (\alph*)]
+  \item
+    Both \(P(z)\) and \(Q(z)\) are nonconstant.
+    \par\smallskip
+    Then \(P'(z)\) and \(Q'(z)\) have degrees \(n - 1\) and \(m - 1\),
+    respectively.
+    Since we are looking only for the highest degree terms, we have
+    \[
+    R'(z) = \frac{z^{n - 1}z^m - z^nz^{m - 1}}{z^{2m}}
+    \]
+    Therefore, the degree of \(R'(z)\) is \(k' = \max\{n + m - 1, 2m\}\).
+  \item
+    Suppose \(P(z)\) is nonconstant and \(Q(z)\) is a nonzero constant
+    function.
+    \[
+    R'(z) = \frac{z^{n - 1} - z^n\cdot 0}{z^{0\cdot 2}}
+    \]
+    The degree of \(R'(z)\) is \(k' = n - 1\).
+  \item
+    Suppose \(P(z)\) is a nonzero constant function and \(Q(z)\) is a
+    nonconstant.
+    \[
+    R'(z) = \frac{0\cdot z^m - z^{m - 1}}{z^{2m}}
+    \]
+    The degree of \(R'(z)\) is \(k' = 2m\).
+  \item
+    Suppose both \(P(z)\) and \(Q(z)\) are nonzero constant functions.
+    \par\smallskip
+    In this case, \(R'(z) = 0\) so \(P(z) = a\) and \(Q(z) = b\).
+    Then the degree of \(R'(z)\) is \(k' = 0\).
+  \end{exercise}
+\end{exercise}
 
 \section{Elementary Theory of Power Series}
 
@@ -391,7 +431,7 @@
 
 \subsection{Uniform Convergence}
 
-\begin{enumerate}
+\begin{exercise}
 \item
   Prove that a convergent sequence is bounded.
   \par\smallskip
@@ -568,11 +608,11 @@
   (It is easy if both series are absolutely convergent.
   Try to rearrange the proof so economically that the absolute convergence of
   the second series is not needed.)
-\end{enumerate}
+\end{exercise}
 
 \subsection{Power Series}
 
-\begin{enumerate}
+\begin{exercise}
 \item
   Expand \((1 - z)^{-m}\), \(m\) a positive integer, in powers of \(z\).
   \par\smallskip
@@ -635,13 +675,13 @@
   \[
   R = \lim_{n\to\infty}\Bigl\lvert\frac{n!}{(n + 1)!}\Bigr\rvert = 0
   \]
-  For \(\sum q^{n^2}z^n\), we will use the ratio test.
+  For \(\sum q^{n^2}z^n\), we will use the root test.
   \[
-  R = \lim_{n\to\infty}\Bigl\lvert\frac{q^{n^2}}{q^{(n + 1)^2}}\Bigr\vert =
-  \frac{1}{\lvert q\rvert}
-  \lim_{n\to\infty}\Bigl\lvert\frac{1}{q^{2n}}\Bigr\rvert =
-  \infty
+  R = 1/\limsup_{n\to\infty}\sqrt[n]{\lvert q^n\rvert^n} =
+  1/\limsup_{n\to\infty}\lvert q\rvert^n
   \]
+  for \(\lvert q\rvert < 1\), \(R = \infty\), and for \(\lvert q\rvert > 1\),
+  \(R = 0\).
   For \(\sum z^{n!}\), we will use the root test.
   \[
   R = 1/\limsup_{n\to\infty}\sqrt[n]{\lvert z^{(n - 1)!}\rvert^n} =
@@ -819,7 +859,7 @@
   \lim_{n\to\infty}\frac{1}{1^n + 1^{-n}} = \frac{1}{2}\neq 0;
   \]
   therefore, the series diverges.
-\end{enumerate}
+\end{exercise}
 
 \subsection{Abel's Limit Theorem}
 
@@ -829,7 +869,7 @@
 
 \subsection{The Trigonometric Functions}
 
-\begin{enumerate}
+\begin{exercise}
 \item
   Find the values of \(\sin(i)\), \(\cos(i)\), and \(\tan(1 + i)\).
   \par\smallskip
@@ -952,13 +992,13 @@
     \lvert\sin(z)\rvert^2 & = \\
                           & = (\cosh(2y) - \cos(2x))/2
   \end{align*}
-\end{enumerate}
+\end{exercise}
 
 \subsection{Periodicity}
 
 \subsection{The Logarithm}
 
-\begin{enumerate}
+\begin{exercise}
 \item
   For real \(y\), show that every remainder in the series for \(\cos(y)\) and
   \(\sin(y)\) has the same sign as the leading term (this generalizes the
@@ -1005,7 +1045,7 @@
   For all problems, \(k\in\mathbb{Z}\).
   \begin{alignat*}{4}
     e^z & = 2 & \qquad & e^z && ={} -1\\
-    z & = \log(2) + 2ki\pi & & z && ={} \log(-1)\\
+    z & = \log(2) & & z && ={} \log(-1)\\
     e^z & = i & & && ={}\log\lvert i\rvert + i(\arg(-1) + 2k\pi)\\
     z & = \log\lvert i\rvert + i(\arg(i) + 2k\pi) & & && = {} i\pi(1 + 2k\pi)\\
     & = \frac{i\pi}{2}(1 + 4k) & & e^z && = \frac{-i}{2}\\
@@ -1104,7 +1144,19 @@
 \item
   Show that the roots of the binomial equation \(z^n = a\) are the vertices of
   a regular polygon (equal sides and angles).
-\end{enumerate}
+  \par\smallskip
+  Let \(z = re^{i\theta}\).
+  Then
+  \[
+  r^ne^{i\theta n} = ae^{2i\pi k}.
+  \]
+  Therefore, \(r = a^{1/n}\) and \(\theta = 2i\pi k/n\).
+  Since \(r\) is just the radius, the roots will be located on a circle of
+  radius \(r\) at \(\exp(2i\pi k/n)\) for \(k\in[0,n-1]\).
+  Since each root are angle multiplies about the origin, they will be \(n\)
+  equally spaced points.
+  \(n\) equally spaced points will form the vertices of a regular \(n\)-gon.
+\end{exercise}
 
 %%% Local Variables:
 %%% mode: latex

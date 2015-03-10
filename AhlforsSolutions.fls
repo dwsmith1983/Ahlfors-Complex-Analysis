@@ -362,11 +362,16 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT chapter3.tex
 INPUT chapter3.tex
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri9d.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9d.vf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrij8r.tfm
 INPUT AhlforsSolutions.aux
 INPUT ./AhlforsSolutions.out
 INPUT ./AhlforsSolutions.out
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
@@ -386,3 +391,4 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb

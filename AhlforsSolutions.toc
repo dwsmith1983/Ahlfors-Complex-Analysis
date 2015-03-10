@@ -31,3 +31,4 @@
 \contentsline {section}{\numberline {3.1}Elementary Point Set Topology}{33}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Sets and Elements}{33}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Metric Spaces}{33}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Connectedness}{34}{subsection.3.1.3}

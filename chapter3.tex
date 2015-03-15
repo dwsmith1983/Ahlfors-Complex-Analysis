@@ -140,9 +140,36 @@
   If \(X\subset S\), show that the relatively open (closed) subsets of \(X\)
   are precisely those sets that can be expressed as the intersection of \(X\)
   with an open (closed) subsets of \(S\).
+  \par\smallskip
+  Let \(\{U_{\alpha}\}\) be the open sets of \(S\) such that
+  \(\bigcup_{\alpha}U_{\alpha} = S\).
+  Then
+  \(X = X\cap\bigcup_{\alpha}U_{\alpha} = \bigcup_{\alpha}(X\cap U_{\alpha})\).
+  Let \(\{A_n\} = \{X\cap U_{\alpha}\}\).
+  Then \(A_n\) is relatively open in \(X\) since \(A_n\) belongs to the
+  topology of \(X\); that is, for each \(n\), \(A_n\subset X\) and
+  \(X = \bigcup_nA_n\).
 \item
   Show that the union of two regions is a region if and only if they have a
   common point.
+  \par\smallskip
+  For the first implication, \(\Rightarrow\), suppose on the contrary that the
+  union of two regions is a region and they have no point in common.
+  Let \(A\) and \(B\) be these two nonempty regions.
+  Since they share no point in common,
+  \(A\cap\bar{B} = B\cap\bar{A} = \varnothing\).
+  Therefore, \(A\) and \(B\) are separated so they cannot be a region.
+  We have reached a contradiction so if the union of two regions is a region,
+  then they have a point in common.
+  For the finally implication, suppose they have a point in common and the
+  union of two regions is not a region.
+  Since the union of two regions is not a region, the regions are separated.
+  Let \(A\) and \(B\) be two nonempty separated regions.
+  Since \(A\) and \(B\) are separated,
+  \(A\cap\bar{B} = B\cap\bar{A} = \varnothing\); therefore, \(A\) and \(B\)
+  cannot have a point in common.
+  We have reached contradiction so if they have a point in common, then the
+  union of two regions is are a region.
 \item
   \label{3.1.3.3}
   Prove that the closure of a connected set is connected.

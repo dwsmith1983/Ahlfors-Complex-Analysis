@@ -1,12 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  9 MAR 2015 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.19)  15 MAR 2015 00:07
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**AhlforsSolutions.tex
+**\input AhlforsSolutions.tex
 (./AhlforsSolutions.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2015/02/07 v3.16 KOMA-Script document class (book)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1344,25 +1342,29 @@ Chapter 3.
 [33
 
 
-])
+] [34])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
- [34]
+ [35]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
  (./AhlforsSolutions.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
 Package rerunfilecheck Info: File `AhlforsSolutions.out' has not changed.
 (rerunfilecheck)             Checksum: 6F6179538CC2B654366107863D62D30F;2630.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
  ) 
 Here is how much of TeX's memory you used:
- 21514 strings out of 493109
- 335141 string characters out of 6135010
+ 21520 strings out of 493109
+ 335188 string characters out of 6135010
  539190 words of memory out of 5000000
  24261 multiletter control sequences out of 15000+600000
- 51269 words of font info for 193 fonts, out of 8000000 for 9000
+ 51550 words of font info for 197 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,18n,118p,383b,2135s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,18n,118p,390b,2135s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
@@ -1379,16 +1381,17 @@ cal/texlive/2014/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/
 texlive/2014/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on AhlforsSolutions.pdf (34 pages, 314557 bytes).
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on AhlforsSolutions.pdf (35 pages, 319366 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 582 compressed objects within 6 object streams
- 221 named destinations out of 1000 (max. 500000)
+ 658 PDF objects out of 1000 (max. 8388607)
+ 588 compressed objects within 6 object streams
+ 222 named destinations out of 1000 (max. 500000)
  32027 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -15,7 +15,7 @@
   The latter space is bounded in the sense that all distances lie under a fixed
   bound.
   \par\smallskip
-  Since \(d(x,y)\) is a metric on \(S\), \(d(x,y)\) satifies
+  Since \(d(x,y)\) is a metric on \(S\), \(d(x,y)\) satisfies
   \begin{subequations}
     \begin{align}
       d(x, y) & \geq 0,\text{  and zero only when \(x = y\)}\label{3.1.2.1a}\\
@@ -63,7 +63,7 @@
   Let \(\epsilon,\delta > 0\) be given.
   We can write
   \(\delta(x,y) = \frac{d(x,y)}{1 + d(x,y)} = 1 - \frac{1}{1 + d(x,y)}\).
-  We need to find a \(\delta\) such that whenver \(d(x,y) < \delta\),
+  We need to find a \(\delta\) such that whenever \(d(x,y) < \delta\),
   \(\delta(x,y) < \epsilon\).
   \begin{align*}
     1 - \frac{1}{1 + d(x, y)} & < \epsilon\\
@@ -104,7 +104,7 @@
   A set is said to be discrete if all its points are isolated.
   Show that a discrete set in \(\mathbb{R}\) or \(\mathbb{C}\) is countable.
   \par\smallskip
-  Let \(S\) be a dsicrete set in \(\mathbb{R}\) or \(\mathbb{C}\).
+  Let \(S\) be a discrete set in \(\mathbb{R}\) or \(\mathbb{C}\).
   If \(z\in S\), then for some \(\epsilon_i > 0\), for \(i\in\mathbb{Z}\),
   \(N_{\epsilon_i}(z_i)\) is the \(i\)-th neighborhood of \(z_i\).
   Since \(S\) is discrete, there exists an \(\epsilon\) for each \(i\) such
@@ -173,11 +173,95 @@
 \item
   \label{3.1.3.3}
   Prove that the closure of a connected set is connected.
+  \par\smallskip
+  Let \(T\) be a topological space such that \(E,\bar{E}\subset T\).
+  Let \(E\) be a connected set and suppose \(\bar{E}\) is separated; that is,
+  \(\bar{E} = A\cup B\) where \(A,B\) are relatively open in \(\bar{E}\),
+  nonempty, and disjoint sets.
+  Then there exists open sets \(U,V\) in \(T\) such that \(A = U\cap\bar{E}\)
+  and \(B = V\cap\bar{E}\).
+  Now, \(A\subset U\), \(B\subset V\), and \(U,V\neq\varnothing\).
+  Therefore, \(U\cap E\neq\varnothing\neq V\cap E\) so \(U\cap E\) and
+  \(V\cap E\) are nonempty, disjoint sets.
+  Then \(E = U\cup V\) so \(E\) is separated.
+  We have, thus, reached a contradiction and the closure of connected set is
+  also connected.
 \item
   Let \(A\) be the set of points \((x,y)\in\mathbb{R}^2\) with \(x = 0\),
   \(\lvert y\rvert\leq 1\), and let \(B\) be the set with \(x > 0\),
   \(y = \sin(1/x)\).
   Is \(A\cup B\) connected?
+  \par\smallskip
+  This is known as the topologist's sine curve.
+  \begin{figure}[H]
+    \centering
+    \includestandalone[width = 3in, mode = image]{Tikz/ch3sec13prob4}
+    \caption{Topologist's sine curve plotted on the domain \(x\in(0,1]\).}
+    \label{ch3sec13prob4}
+  \end{figure}
+  Let \(S = A\cup B\).
+  We claim that the closure of \(B\) in \(\mathbb{R}^2\) is \(\bar{B} = S\).
+  Let \(x\in S\).
+  If \(x\in B\), then take a constant sequence \(\{x,x,\ldots\}\).
+  If \(x\in A\), then \(x = (0,y)\) for \(\lvert y\rvert\leq 1\) or said
+  another way \(y = \sin(\theta)\) for \(\theta\in[-\pi,\pi]\).
+  We can write \(y = \sin(\theta)\) as \(y = \sin(\theta + 2k\pi)\) for
+  \(k\in\mathbb{Z}^+\).
+  Let \(x_k = 1/(\theta + 2k\pi) > 0\).
+  Then \(y = \sin(1/x_k)\).
+  Now \(\{x_k\}\to 0\) when \(k\to\infty\).
+  Then \((x_k,\sin(1/x_k)) = (x_n,y)\to (0,y)\in\bar{B}\) since
+  \(\lvert y\rvert\leq 1\).
+  Therefore, \(S\subset\bar{B}\).
+  Let \(\{(x_n,y_n)\}\in S\) such that \(\{(x_n,y_n)\}\to
+  (x,y)\in\mathbb{R}^2\).
+  Then \(\lim_{n\to\infty}x_n = x\) and \(\lim_{n\to\infty}y_n = y\).
+  From the definition of the sets, \(x\geq 0\) and \(\lvert y\rvert\leq 1\) so
+  \(\lvert y\rvert = \lim_{n\to\infty}\lvert y_n\rvert\leq 1\).
+  If \(x = 0\), then \((0,y)\in S\) since \(\lvert y\rvert\leq 1\).
+  Suppose \(x > 0\).
+  Then there exist \(m > N\) such that \(x_m > 0\) for all \(m > N\) so
+  \((x_n,y_n)\in B\).
+  Let \(y_n = \sin(1/x_n)\) since \((x_n,y_n)\in B\).
+  Notice that for \(z\in(0,\infty)\), \(\sin(1/z\) is continuous.
+  Since \(\{x_n\}\to x\) and \(y_n = \sin(1/x_n)\), we have
+  \[
+  y = \lim_{n\to\infty}y_n = \lim_{n\to\infty}\sin(1/x_n) = \sin(1/x).
+  \]
+  Thus, \((x,y)\in\bar{B}\subset S\) so \(\bar{B} = S\).
+  Since \(A\cap\bar{B} = A\cap S = A\neq\varnothing\), \(S\) is connected.
+  However, \(S\) is not path connected.
+  That is, being connected doesn't imply path connectedness.
+  \par\smallskip
+  Suppose \(S\) is path connected and there exists an \(f\colon [0,1]\to S\)
+  such that \(f(0)\in B\) and \(f(1)\in A\).
+  Since \(A\) is path connected, suppose \(f(1) = (0,1)\).
+  Let \(\epsilon = 1/2 > 0\).
+  By continuity, for \(\delta > 0\), \(\lvert f(t) - (0,1)\rvert < 1/2\)
+  whenever \(1 - \delta\leq t\leq 1\).
+  Since \(f\) is continuous, the image of \(f([1 - \delta,1])\) is connected.
+  Let \(f(1- \delta) = (x,y)\).
+  Consider the composite of \(f\colon [1 - \delta,1]\to\mathbb{R}^2\) and its
+  projection on the \(x\)-axis.
+  Since both maps are continuous as well as their composite, the image of the
+  composite map is a connected subset of \(\mathbb{R}^1\) which contains zero
+  and \(x\).
+  Now zero is the \(x\)-coordinate of \(f(1)\) and \(x\) the \(x\)-coordinate
+  of \(f(1 - \delta)\).
+  Since \(\mathbb{R}^1\) is convex, connected sets are intervals.
+  Then the set of \(x\)-coordinates for \(f(1 - \delta)\) is \(x_0\in[0,x]\).
+  For \(x_0\in(0,x]\), there exists \(t\in[1 - \delta,1]\) such that
+  \(f(t) = (x_0,\sin(1/x_0))\).
+  If \(x_0 = 1/(2k\pi - \pi/2)\) for \(k\gg 1\), then \(0 < x_0 < x\).
+  Now \(1/x_0 = \pi(4k - 1)/2\) which is a \(2\pi\) mutliple of \(-\pi/2\) for
+  all \(k\).
+  Therefore, \(\sin(1/x_0) = -1\) so
+  \((x_0, \sin(1/x_0)) = (1/(2k\pi - \pi/2),-1)\) for some
+  \(t\in[1 - \delta,1]\) which lies within a distance of \(\epsilon = 1/2\) of
+  \((0,1)\).
+  However, the distance between \((1/(2k\pi - \pi/2),-1)\) and \((0,1)\) for
+  large \(k\) is greater than \(1\) which is a contradiction.
+  Thus, \(S\) cannot be path connected.
 \item
   Let \(E\) be the set of points \((x,y)\in\mathbb{R}^2\) such that
   \(0\leq x\leq 1\) and either \(y = 0\) or \(y = 1/n\) for some positive

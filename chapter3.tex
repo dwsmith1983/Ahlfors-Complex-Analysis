@@ -380,6 +380,18 @@
   compact sets, then the intersection \(\bigcap_1^{\infty}E_n\) is not empty
   (Cantor's lemma).
   Show by example that this need not be true if the sets are merely closed.
+  \par\smallskip
+  Consider the topological space \(\mathbb{R}^1\).
+  Let \(E_n = \{n\in\mathbb{Z}^{\geq 0}\colon [n,\infty)\}\).
+  Then \(E_n\supset E_{n + 1}\supset\cdots\).
+  Since \((-\infty,n)\) is open in \(\mathbb{R}^1\),
+  \([n,\infty) = (-\infty,n)^c\) is closed.
+  The infinite intersection of \(E_n\) is
+  \[
+  \bigcap_{n = 1}^{\infty}E_n = \bigcap_{n = 1}^{\infty}[n, \infty) =
+  \varnothing.
+  \]
+  Thus, the statement isn't true if we consider only closed sets.
 \item
   Let \(S\) be the set of all sequences \(x = \{x_n\}\) of real numbers such
   that only a finite number of the \(x_n\) are \(\neq 0\).

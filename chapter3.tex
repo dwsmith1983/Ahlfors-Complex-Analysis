@@ -276,6 +276,124 @@
   A set is said to be \textit{discrete} if all its points are isolated.
   Show that a discrete set in a separable metric space is countable.
 \end{exercise}
+
+\subsection{Compactness}
+
+\begin{exercise}
+\item
+  Given an alternate proof of the fact that every bounded sequence of complex
+  numbers has a convergent subsequence (for instance by use of the limes
+  inferior).
+\item
+  Show that the Heine-Borel property can also be expressed in the following
+  manner: Every collection of closed sets with an empty intersection contains
+  a finite subcollection with an empty intersection.
+  \par\smallskip
+  The statement above is equivalent to: A collection \(\mathcal{F}\) of closed
+  subsets of a topological space \((X,\mathcal{T})\) has the finite
+  intersection property if \(\cap\mathcal{F}_{\alpha}\neq\varnothing\) for all
+  finite subcollections \(\mathcal{F}_{\alpha}\subset\mathcal{F}\).
+  Show that \((X,\mathcal{T})\), a topological space, is compacy if and only
+  if every family of closed sets \(\mathcal{F}\subset\mathcal{P}(X)\) having
+  the finite intersection property satisfies
+  \(\cap\mathcal{F}\neq\varnothing\).
+  \par\smallskip
+  Let \(\mathcal{F} = \{F_{\alpha}\colon\alpha\in A\}\) be a collection of
+  closed sets in \(X\).
+  Now
+  \[
+  \bigcap_{\alpha}F_{\alpha} = \varnothing\iff\bigcup_{\alpha}F_{\alpha}^c = X.
+  \]
+  Therefore, the set \(\bigcup_{\alpha}F_{\alpha}^c\) is an open cover of
+  \(X\) since \(F_{\alpha}\) is closed.
+  If the intersection of the set \(\{F_{\alpha_n}\}\) is empty for a finite
+  \(n\), then \(\bigcup_{\alpha}F_{\alpha_n}^c\) is a finite subcover of \(X\).
+  Then every open cover of \(X\) has a finite subcover if and only if every
+  collection of closed sets with an empty intersection has a finite
+  subcollection with an empty intersection.
+  Thus, \(X\) is compact if and only if every collection of closed sets with
+  the finite intersection property has a nonempty intersection.
+\item
+  Use compactness to prove that a closed bounded set of real numbers has a
+  maximum.
+  \par\smallskip
+  Since we are dealing with a set of real numbers, we are speaking of compact
+  metric spaces.
+  A subset \(E\) of a metric space \(X\) is compact if and only if every
+  sequence in \(E\) has convergent subsequence in \(E\) (sequentially
+  compact).
+  \par\smallskip
+  First, we will show \(\Rightarrow\) by contradiction.
+  Let \(\{x_n\}\) be a sequence in \(E\).
+  Suppose \(\{x_n\}\) doesn't have a convergent subsequence in \(E\).
+  Then for \(x\in E\), there exists \(\epsilon > 0\) such that
+  \(x_n\in N_{\epsilon}(x)\) for only finitely many \(n\).
+  Then \(N_{\epsilon}(x)\) would be an open cover of \(E\) which has no finite
+  subcover.
+  Therefore, \(E\) couldn't be compact contradicting the premise.
+  Thus, if \(E\) is compact metric space, then \(E\) is sequentialy compact.
+  In order to prove \(\Leftarrow\), we need to prove that a sequentially
+  compact set contains a countable dense subset.
+  \par\smallskip
+  \textbf{Lemma} \(\mathbold{3.1.4.1:}\) A sequentially compact set contains
+  a countable dense subset (separable space).
+  \par\smallskip
+  Let \(A\) be an infinite sequentially compact set.
+  Since \(A\) is sequential compact, \(A\) is bounded; otherwise, we would have
+  nonconvergent subsequences in \(A\).
+  Let \(\{y_n\}\) be a dense sequence in \(A\).
+  Choose \(y_1,y_2,\ldots,y_n\) of \(\{y_n\}\).
+  Let \(\delta_n = \sup_{y\in A}\min_{k\leq n}d(y,y_n) > 0\).
+  Let \(y_{n + 1}\) be such that \(d(y_{n + 1},y_k)\geq\delta/2\) for
+  \(k = 1,\ldots,n\).
+  Since \(\{y_n\}\) has a convergent subsequence, for all \(\epsilon > 0\)
+  there exist \(m,n\in\mathbb{Z}^+\) such that \(d(y_m,y_n) < \epsilon\).
+  Then
+  \[
+  d(y,y_{n - 1}) < \delta_{n - 1}/2 < d(y_m,y_n) < \epsilon\iff
+  \delta_{n - 1} < 2\epsilon
+  \]
+  Thus, all \(y\in A\) is in \(2\epsilon\) of \(y_k\) for \(k < n\).
+  Since \(\epsilon > 0\) and arbitrary, \(\{y_n\}\) is dense in \(A\) because
+  every nonempty open set contains at least one element of the sequence.
+  \par\smallskip
+  Now for \(\Leftarrow\).
+  Let \(F_{\alpha}\) be an open cover \(E\) and let \(\{y_n\}\) be a dense
+  sequence.
+  Let \(r\in\mathbb{Q}\) and let \(G\) be the family of neighborhoods,
+  \(N_r(y_n)\), that are contained in \(F_{\alpha}\).
+  Since \(\mathbb{Q}\) is countable, \(G\) is countable.
+  Let \(x\in E\) and \(x\in F_{\alpha}\).
+  Then \(N_{\epsilon}(x)\subset F_{\alpha}\) for \(\epsilon > 0\).
+  Since \(\{y_n\}\) is dense in \(E\), by lemma \(3.1.4.1\),
+  \(d(y,y_n) < \epsilon/2\) for some \(n\).
+  For all \(r\in\mathbb{Q}\), \(d(y_n,y) < r < \epsilon - d(y_n,y)\).
+  Then \(x\in N_r(y_n)\subset N_{\epsilon}(x)\subset G\).
+  Since \(x\in N_r(y_n)\in G\) and \(G\) is countable, we can find a finite
+  subcover of \(G\).
+  Replace each \(G\) by \(F_{\alpha}\) where \(G\subset F_{\alpha}\) for some
+  \(\alpha\).
+  Then this set of \(F_{\alpha}\) is a finite subcover.
+  Thus, if \(E\) is a sequentially compact metric space, then \(E\) is compact.
+\item
+  If \(E_1\supset E_2\supset\cdots\) is a decreasing sequence of nonempty
+  compact sets, then the intersection \(\bigcap_1^{\infty}E_n\) is not empty
+  (Cantor's lemma).
+  Show by example that this need not be true if the sets are merely closed.
+\item
+  Let \(S\) be the set of all sequences \(x = \{x_n\}\) of real numbers such
+  that only a finite number of the \(x_n\) are \(\neq 0\).
+  Define \(d(x,y) = \max\lvert x_n - y_n\rvert\).
+  Is the space complete?
+  Show that the \(\delta\)-neighborhoods are not totally bounded.
+\end{exercise}
+
+\subsection{Continuous Functions}
+
+\subsection{Topological Spaces}
+
+\section{Conformality}
+
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t

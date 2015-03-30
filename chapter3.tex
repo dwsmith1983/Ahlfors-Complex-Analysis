@@ -49,7 +49,7 @@
   When \(x\neq y\neq z\), the triangle inequality follows since each distance
   is positive and \cref{3.1.2.1c}; that is,
   \[
-  \delta(x, z)\leq \delta(x, y) + \delta(y, z).
+    \delta(x, z)\leq \delta(x, y) + \delta(y, z).
   \]
 \item
   Suppose that there are given two distance functions \(d(x,y)\) and
@@ -73,8 +73,8 @@
   For \(\epsilon < 1\), if \(d(x,y) < \delta = \frac{\epsilon}{1 - \epsilon}\),
   then
   \[
-  \delta(x,y) = 1 - \frac{1}{1 + d(x, y)} < 1 -
-  \frac{1}{1 + \frac{\epsilon}{1 - \epsilon}} = \epsilon.
+    \delta(x,y) = 1 - \frac{1}{1 + d(x, y)} < 1 -
+    \frac{1}{1 + \frac{\epsilon}{1 - \epsilon}} = \epsilon.
   \]
   If \(\epsilon > 1\),
   \(\delta(x,y) = \frac{d(x,y)}{1 + d(x,y)} < 1 < \epsilon\).
@@ -112,13 +112,13 @@
   Let \(\epsilon_i\) be this \(\epsilon\). 
   Consider the following function
   \[
-  f(i) =
-  \begin{cases}
-    0, & i = 0\\
-    1, & i = 1\\
-    2i, & i > 0\\
-    2(-i) + 1, & i < 0
-  \end{cases}
+    f(i) =
+    \begin{cases}
+      0, & i = 0\\
+      1, & i = 1\\
+      2i, & i > 0\\
+      2(-i) + 1, & i < 0
+    \end{cases}
   \]
   We have put \(i\) in a one-to-one correspondence with \(\mathbb{Z}^+\).
   Therefore, \(S\) is countable.
@@ -226,7 +226,7 @@
   Notice that for \(z\in(0,\infty)\), \(\sin(1/z\) is continuous.
   Since \(\{x_n\}\to x\) and \(y_n = \sin(1/x_n)\), we have
   \[
-  y = \lim_{n\to\infty}y_n = \lim_{n\to\infty}\sin(1/x_n) = \sin(1/x).
+    y = \lim_{n\to\infty}y_n = \lim_{n\to\infty}\sin(1/x_n) = \sin(1/x).
   \]
   Thus, \((x,y)\in\bar{B}\subset S\) so \(\bar{B} = S\).
   Since \(A\cap\bar{B} = A\cap S = A\neq\varnothing\), \(S\) is connected.
@@ -302,7 +302,8 @@
   closed sets in \(X\).
   Now
   \[
-  \bigcap_{\alpha}F_{\alpha} = \varnothing\iff\bigcup_{\alpha}F_{\alpha}^c = X.
+    \bigcap_{\alpha}F_{\alpha} = \varnothing\iff\bigcup_{\alpha}F_{\alpha}^c =
+    X.
   \]
   Therefore, the set \(\bigcup_{\alpha}F_{\alpha}^c\) is an open cover of
   \(X\) since \(F_{\alpha}\) is closed.
@@ -350,8 +351,8 @@
   there exist \(m,n\in\mathbb{Z}^+\) such that \(d(y_m,y_n) < \epsilon\).
   Then
   \[
-  d(y,y_{n - 1}) < \delta_{n - 1}/2 < d(y_m,y_n) < \epsilon\iff
-  \delta_{n - 1} < 2\epsilon
+    d(y,y_{n - 1}) < \delta_{n - 1}/2 < d(y_m,y_n) < \epsilon\iff
+    \delta_{n - 1} < 2\epsilon
   \]
   Thus, all \(y\in A\) is in \(2\epsilon\) of \(y_k\) for \(k < n\).
   Since \(\epsilon > 0\) and arbitrary, \(\{y_n\}\) is dense in \(A\) because
@@ -388,8 +389,8 @@
   \([n,\infty) = (-\infty,n)^c\) is closed.
   The infinite intersection of \(E_n\) is
   \[
-  \bigcap_{n = 1}^{\infty}E_n = \bigcap_{n = 1}^{\infty}[n, \infty) =
-  \varnothing.
+    \bigcap_{n = 1}^{\infty}E_n = \bigcap_{n = 1}^{\infty}[n, \infty) =
+    \varnothing.
   \]
   Thus, the statement isn't true if we consider only closed sets.
 \item
@@ -401,6 +402,30 @@
 \end{exercise}
 
 \subsection{Continuous Functions}
+
+\begin{exercise}
+\item
+  Construct a topological mapping of the open disk \(\lvert z\rvert < 1\) onto
+  the whole plane.
+\item
+  Prove that a subset of the real line which is topologically equivalent to an
+  open interval is an open interval.
+  (Consider the effect of removing a point.)
+\item
+  Prove that every continuous one-to-one mapping of a compact space is
+  topological.
+  (Show that closed sets are mapped on closed sets.)
+\item
+  Let \(X\) and \(Y\) be compact sets in a complete metric space.
+  Prove that there exists \(x\in X\) and a \(y\in Y\) such that
+  \(d(x,y)\) is a minimum.
+\item
+  Which of the following functions are uniformally continuous on the whole
+  real line:
+  \[
+    \sin(x),x\sin(x),x\sin(x^2),\sqrt{\lvert x\rvert}\sin(x)\mbox{?}
+  \]
+\end{exercise}
 
 \subsection{Topological Spaces}
 

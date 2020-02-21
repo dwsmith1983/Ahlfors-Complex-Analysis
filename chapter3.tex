@@ -253,7 +253,7 @@
   For \(x_0\in(0,x]\), there exists \(t\in[1 - \delta,1]\) such that
   \(f(t) = (x_0,\sin(1/x_0))\).
   If \(x_0 = 1/(2k\pi - \pi/2)\) for \(k\gg 1\), then \(0 < x_0 < x\).
-  Now \(1/x_0 = \pi(4k - 1)/2\) which is a \(2\pi\) mutliple of \(-\pi/2\) for
+  Now \(1/x_0 = \pi(4k - 1)/2\) which is a \(2\pi\) multiple of \(-\pi/2\) for
   all \(k\).
   Therefore, \(\sin(1/x_0) = -1\) so
   \((x_0, \sin(1/x_0)) = (1/(2k\pi - \pi/2),-1)\) for some
@@ -332,7 +332,7 @@
   Then \(N_{\epsilon}(x)\) would be an open cover of \(E\) which has no finite
   subcover.
   Therefore, \(E\) couldn't be compact contradicting the premise.
-  Thus, if \(E\) is compact metric space, then \(E\) is sequentialy compact.
+  Thus, if \(E\) is compact metric space, then \(E\) is sequentially compact.
   In order to prove \(\Leftarrow\), we need to prove that a sequentially
   compact set contains a countable dense subset.
   \par\smallskip
@@ -427,7 +427,7 @@
   Prove that there exists \(x\in X\) and a \(y\in Y\) such that
   \(d(x,y)\) is a minimum.
 \item
-  Which of the following functions are uniformally continuous on the whole
+  Which of the following functions are uniformly continuous on the whole
   real line:
   \[
     \sin(x),x\sin(x),x\sin(x^2),\sqrt{\lvert x\rvert}\sin(x)\mbox{?}
@@ -437,6 +437,33 @@
 \subsection{Topological Spaces}
 
 \section{Conformality}
+
+\subsection{Arcs and Closed Curves}
+
+\subsection{Analytic Functions in Regions}
+
+\begin{exercise}
+	\item
+		Give the precise definition of a single-valued branch of \(\sqrt{1 + z} + \sqrt{1 - z}\)
+		in a suitable region, and prove it is analytic.
+		\par\smallskip
+		Let \(f(z)_+ = \sqrt{1 + z}\) then \(z = -1\).
+		Define \(z + 1 = r\cdot e^{i\theta}\).
+		If we encircle \(z = -1\), we have that
+		\[
+			\begin{aligned}
+				r\cdot e^{i(\theta + 2\pi) / 2} &={} r\cdot e^{i\theta/2}e^{i\pi} &={} -r\cdot e^{i\theta/2} 
+				&= -f(z) \notag
+			\end{aligned}
+		\]
+		That is, \(f(z)_+\) would be multi-valued.
+		We can define the branch cut such that \(\Omega_+ = \mathbb{C} / (-\infty, -1]\).
+		Similarly, we have that \(\Omega_- = \mathbb{C} / [1, \infty)\).
+		Finally, \(f(z) = \sqrt{1 + z} + \sqrt{1 - z}\) is single-valued for 
+		\(\Omega = \mathbb{C} / \big[(-\infty, -1]\cup [1, \infty)\big]\) is open and connected.
+		
+		A complex
+\end{exercise}
 
 %%% Local Variables:
 %%% mode: latex
